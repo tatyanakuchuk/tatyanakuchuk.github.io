@@ -525,7 +525,7 @@ label {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 45px;
-  padding-bottom: 30px; }
+  padding-bottom: 10px; }
 
 .benefits__list {
   margin: 0;
@@ -538,7 +538,8 @@ label {
   vertical-align: top;
   font-size: 18px;
   width: 50%;
-  margin-bottom: 25px;
+  min-height: 130px;
+  margin-bottom: 15px;
   padding-left: 100px;
   padding-right: 45px;
   position: relative;
@@ -552,8 +553,6 @@ label {
     background-repeat: no-repeat;
     background-position: center;
     left: 0; }
-  .benefit:last-child {
-    margin-bottom: 0; }
 
 .benefit--low-price:before {
   background-image: url(../img/numberone.svg); }
@@ -717,6 +716,7 @@ label {
   .form-control-agreement-2 {
     display: none; }
   .benefit {
+    min-height: 130px;
     padding-right: 15px;
     padding-left: 80px; }
     .benefit:before {
@@ -788,6 +788,7 @@ label {
   .section__inner {
     padding-top: 40px; }
   .benefit {
+    min-height: 75px;
     padding-left: 60px; }
     .benefit:before {
       width: 45px;
