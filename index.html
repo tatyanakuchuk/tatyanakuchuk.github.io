@@ -8,6 +8,7 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+	<!-- ПЕРВЫЙ ЭКРАН -->
 	<section class="intro">
 			<div class="intro__top">
 				<!-- Лого -->
@@ -55,7 +56,7 @@
 								</div>
 							</div>
 							<div class="btn-wrap">
-								<div class="form-control-agreement-1">
+							<div class="agreement-1">
 									<input type="checkbox" id="agreement" class="agreement-checkbox">
 									<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 								</div>
@@ -64,7 +65,7 @@
 								</div>
 							</div>
 						</form>
-						<div class="form-control-agreement-2">
+					<div class="agreement-2">
 							<input type="checkbox" id="agreement" class="agreement-checkbox">
 							<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 						</div>
@@ -72,9 +73,9 @@
 				</div>
 			</div>
 	</section>
+
 	<!-- СЕКЦИЯ ВАШИ ВЫГОДЫ -->
 	<section class="benefits">
-		<div class="section__inner">
 			<h2 class="section__title  section__title--benefits"><span>Ваши выгоды</span></h2>
 			<ul class="benefits__list">
 				<li class="benefit  benefit--low-price">
@@ -102,11 +103,10 @@
 					<p class="benefit__text">Изготовим любые нестандартные светильники под ваш объект.</p>
 				</li>
 			</ul>
-		</div>
 	</section>
+
 	<!-- СЕКЦИЯ С ЦЕНАМИ -->
 	<section class="price">
-		<div class="section__inner  section__inner--price">
 			<h2 class="section__title  section__title--price"><span>Наши цены</span></h2>
 			<!-- Офисные светильники -->
 			<div class="price__office">
@@ -259,7 +259,7 @@
 								</div>
 							</div>
 							<div class="btn-wrap">
-								<div class="form-control-agreement-1">
+								<div class="agreement-1">
 									<input type="checkbox" id="agreement" class="agreement-checkbox">
 									<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 								</div>
@@ -268,7 +268,7 @@
 								</div>
 							</div>
 						</form>
-						<div class="form-control-agreement-2">
+						<div class="agreement-2">
 							<input type="checkbox" id="agreement" class="agreement-checkbox">
 							<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 						</div>
@@ -364,8 +364,8 @@
 						</div>
 					</div>
 				</li>
-
 			</ul>
+
 			<!-- Форма промышленных светильников -->
 			<div class="form  form-price  form-price--industrial">
 				<div class="form-content">
@@ -386,7 +386,7 @@
 							</div>
 						</div>
 						<div class="btn-wrap">
-							<div class="form-control-agreement-1">
+							<div class="agreement-1">
 								<input type="checkbox" id="agreement" class="agreement-checkbox">
 								<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 							</div>
@@ -395,7 +395,7 @@
 							</div>
 						</div>
 					</form>
-					<div class="form-control-agreement-2">
+					<div class="agreement-2">
 						<input type="checkbox" id="agreement" class="agreement-checkbox">
 						<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 					</div>
@@ -512,7 +512,7 @@
 							</div>
 						</div>
 						<div class="btn-wrap">
-							<div class="form-control-agreement-1">
+						<div class="agreement-1">
 								<input type="checkbox" id="agreement" class="agreement-checkbox">
 								<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 							</div>
@@ -521,7 +521,7 @@
 							</div>
 						</div>
 					</form>
-					<div class="form-control-agreement-2">
+				<div class="agreement-2">
 						<input type="checkbox" id="agreement" class="agreement-checkbox">
 						<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 					</div>
@@ -617,7 +617,7 @@
 							</div>
 						</div>
 						<div class="btn-wrap">
-							<div class="form-control-agreement-1">
+							<div class="agreement-1">
 								<input type="checkbox" id="agreement" class="agreement-checkbox">
 								<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 							</div>
@@ -626,7 +626,7 @@
 							</div>
 						</div>
 					</form>
-					<div class="form-control-agreement-2">
+					<div class="agreement-2">
 						<input type="checkbox" id="agreement" class="agreement-checkbox">
 						<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
 					</div>
@@ -637,92 +637,168 @@
 
 	<!-- CЕКЦИЯ НАШИ СЕРТИФИКАТЫ -->
 	<section class="certificates">
-		<div class="section__inner  section__inner--certificates">
 			<h2 class="section__title  section__title--certificates"><span>Все светильники сертифицированы</span></h2>
-			<ul class="certificates__list">
-				<li class="certificates__item">
+			<div class="certificates__list">
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-				<li class="certificates__item">
+				</div>
+				<div class="certificates__item">
 					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
 						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
 					</a>
-				</li>
-			</ul>
+				</div>
+			</div>
 	</section>
 
 	<!-- СЕКЦИЯ НАШИ ПАРТНЕРЫ -->
 	<section class="partners">
-		<div class="section__inner  section__inner--partners">
-			<h2 class="section__title  section__title--partners"><span>С нами работают</span></h2>
-			<ul class="partners__list">
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-				<li class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></li>
-			</ul>
+		<h2 class="section__title  section__title--partners"><span>С нами работают</span></h2>
+		<div class="partners__list">
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
+		</div>
 	</section>
 
-	<footer class="page-footer">
-		<!-- <div class="page-footer__inner">
-			<div class="copyright">
-				<p class="copyright__text">Copyright © 2017</p>
+	<!-- СЕКЦИЯ НАШИ РАБОТЫ -->
+	<section class="works">
+		<h2 class="section__title  section__title--works"><span>Наши работы</span></h2>
+		<article class="work">
+			<div class="work__inner">
+			<div class="work__photo">
+				<img src="img/ростикс-1.jpg" alt="Ростикс" class="main-photo">
+				<div class="min-photos">
+					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
+					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
+					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
+				</div>
 			</div>
-		</div> -->
-	</footer>
-	<!-- Кнопка наверх -->
-	<!-- <a href="#" class="btn-scroll-to-top">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="611.986px" height="611.986px" viewBox="0 0 611.986 611.986" style="enable-background:new 0 0 611.986 611.986;" xml:space="preserve">
-			<g>
-				<path d="M596.145,405.201L347.627,129.608c-11.418-11.494-26.691-16.551-41.633-15.631c-14.967-0.945-30.215,4.112-41.633,15.631
-					L15.842,405.201c-21.123,21.251-21.123,55.731,0,76.982c21.123,21.25,55.399,21.25,76.522,0l213.629-236.898l213.629,236.898
-					c21.123,21.25,55.398,21.25,76.521,0C617.268,460.933,617.268,426.452,596.145,405.201z"/>
-			</g>
-		</svg>
-	</a> -->
+			<div class="review">
+				<div class="review__info">
+					<h3 class="review__title">
+						<span class="object">Ростикс</span>
+						<span class="city">г. Москва</span>
+					</h3>
+					<span class="delivery">Поставка - <span class="delivery__number">985 светильников.</span></span>
+					<span class="delivery-time">Срок - <span class="delivery-time__number">14 дней.</span></span>
+				</div>
+				<div class="client">
+					<div class="client__photos">
+						<img src="img/logo-client.png" alt="" class="client-logo">
+						<img src="img/photo-client.png" alt="" class="client-photo">
+					</div>
+					<div class="client-info">
+						<span class="name-client">Малькин В.А.</span>
+						<span class="post-client">Директор ООО "Ростикс"</span>
+					</div>
+				</div>
+				<p class="client__review">"При переоборудовании ресторана общественного питания было принято решение о замене люминисцентных светильников на светодиодные. По рекомендации мы обратились в ООО "ВСЕСВЕТОДИОДЫ". Сотрудники компании грамотно подобрали и рассчитали количество светильников на наше помещение. При установке выяснилось, что потребовалось меньшее количество светильников, чем количество ранее установленных, значительно уменьшилась величина потребляемой мощности - более чем в 3 раза, снизились пусковые токи, повысились показатели освещенности, рабочий персонал высоко оценил качество освещения. Полученные результаты эксплуатации показывают энергоэффективность применения светодиодных светильников. И самое главное, что понравилось - это быстрый срок поставки, на довольно большое количество, хочу заметить, ни одна компания куда мы обращались не смогла сработать так оперативно. Надеемся на дальнейшее взаимовыгодное сотрудничество."</p>
+			</div>
+			</div>
+		</article> <!-- end of article -->
+	</section>
+
+	<!-- СЕКЦИЯ КОНТАКТЫ -->
+	<section class="contacts">
+		<h2 class="section__title  section__title--contacts"><span>Контакты</span></h2>
+		<div class="contacts__inner">
+			<div class="contacts__area">
+				<h3 class="contacts__info-title">Контактная информация</h3>
+				<div class="contacts__info">
+					<div class="address-block">
+						<span class="address-text">Наш адрес:</span>
+						<span class="address">Адрес</span>
+					</div>
+					<div class="phone-block">
+						<span class="phone-text">Можно позвонить по телефонам:</span>
+						<span class="phone">8 800 123 12 12</span>
+					</div>
+				</div>
+				<!-- ФОРМА ОТПРАВКИ -->
+				<div class="form  form--contacts">
+					<div class="form-content  form-content--contacts">
+						<h4 class="form-title">Остались вопросы?</h4>
+						<form action="#" method="post" class="contact-form  contact-form--contacts">
+							<div class="form-input-area">
+								<div class="form-control-area">
+									<label for="email">Введите Email:</label>
+									<div class="form-control-email">
+										<input type="email" name="email" class="form-control" id="email" required>
+									</div>
+								</div>
+								<div class="form-control-area">
+									<label for="message">Суть вопроса:</label>
+									<textarea class="message" id="message" rows="4" cols="20"></textarea>
+								</div>
+							</div>
+							<div class="btn-wrap">
+								<div class="agreement-1  agreement-1--contacts">
+									<input type="checkbox" id="agreement" class="agreement-checkbox">
+									<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
+								</div>
+								<div class="form-control-btn  form-control-btn--contacts">
+									<input type="submit" class="contact-form__btn" value="Задать вопрос!">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- КАРТА -->
+			<div class="contacts__area">
+				<h3 class="contacts__map-title">Как добраться?</h3>
+				<div class="map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac621bad9849db6d9d4fefefa83dfefa55078e84c75e5feca4f9ad48860c5cd69&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!--  СКРИПТЫ  -->
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
