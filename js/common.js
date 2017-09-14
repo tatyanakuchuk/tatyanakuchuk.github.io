@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
 	//E-mail Ajax Send
-	$(".contact-form").submit(function() { //Change
+	$(".contact-form--contacts").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "./mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			$(th).find(".success").addClass("active").css('display', "flex").hide().fadeIn();
+			$(th).find(".success").addClass("active").css('display', 'flex').hide().fadeIn();
 			setTimeout(function() {
 				$(th).find(".success").removeClass("active").fadeOut();
 				// Done Functions
