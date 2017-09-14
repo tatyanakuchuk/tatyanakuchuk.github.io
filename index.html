@@ -602,6 +602,8 @@
 				<div class="form-content">
 					<p class="form-text  form-text--price">Получите прайс-лист Светодиодных прожекторов прямо сейчас</p>
 					<form action="#" method="post" id="form" class="contact-form">
+						<!-- СООБЩЕНИЕ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
+						<div class="success"><span class="success-text">Спасибо за заявку!</span></div>
 						<div class="form-input-area">
 							<div class="form-control-area">
 								<label for="phone">Введите телефон:</label>
@@ -625,6 +627,11 @@
 								<input type="submit" class="contact-form__btn" value="Получить прайс!">
 							</div>
 						</div>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Site Name">
+						<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
+						<input type="hidden" name="form_subject" value="прайс-лист Светодиодных прожекторов">
+						<!-- END Hidden Required Fields -->
 					</form>
 					<div class="agreement-2">
 						<input type="checkbox" id="agreement" class="agreement-checkbox">
