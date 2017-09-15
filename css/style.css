@@ -413,9 +413,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 6px; }
 
-.contact-form {
-  position: relative; }
-
 .intro__form {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -426,6 +423,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   margin-bottom: 25px;
   font-size: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #fffde4; }
 
 .contact-form {
@@ -731,20 +730,43 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4;
   letter-spacing: 2px;
   z-index: 10;
-  transition: all 0.3 ease; }
-  .success.active {
-    background-color: #F8F09D; }
+  transition: all 0.3 ease;
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .success-text {
+  position: relative;
+  display: block;
+  width: 600px;
+  padding: 50px 30px;
+  padding-bottom: 55px;
+  border-radius: 3px;
+  border: 2px solid #a7a8aa;
   margin: auto;
-  color: #de504f;
-  width: 190px;
-  text-align: center; }
+  color: #000;
+  text-align: center;
+  background-color: #F8F09D;
+  transition: all 0.3 ease;
+  box-sizing: border-box; }
+
+.btn-close {
+  position: absolute;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  background-color: transparent;
+  box-sizing: border-box;
+  outline: none; }
 
 .certificates {
   border-bottom: 2px solid #e3e3e0; }
