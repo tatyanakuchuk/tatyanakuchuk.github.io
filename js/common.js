@@ -1,23 +1,21 @@
-$(document).ready(function() {
+ $(document).ready(function() {
 
 	//E-mail Ajax Send
-	$(".contact-form--contacts").submit(function() { //Change
+	$("#form").submit(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "/mail.php",
 			data: th.serialize()
 		}).done(function() {
-			$(th).find(".success").addClass("active").css('display', 'flex').hide().fadeIn();
+			alert('1');
 			setTimeout(function() {
-				$(th).find(".success").removeClass("active").fadeOut();
 				// Done Functions
 				th.trigger("reset");
 			}, 2000);
 		});
 		return false;
 	});
-
 
 	$('[data-fancybox]').fancybox({
 		buttons : [
