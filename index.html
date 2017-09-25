@@ -4,904 +4,140 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Светодиоды</title>
+	<title>UMobile</title>
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<!-- ПЕРВЫЙ ЭКРАН -->
 	<section class="intro">
-			<div class="intro__top">
-				<!-- Лого -->
-				<div class="intro__logo">
-					<h1 class="intro__title">Светодиоды</h1>
-					<span class="intro__text">Продажа светодиодных светильников оптом</span>
-				</div>
-				<!-- Телефон -->
-				<div class="intro__phone">
-					<span class="intro__phone-text">Бесплатно по всей России:</span>
-					<span class="intro__phone-number">8 800 123 12 12</span>
-				</div>
-			</div>
-			<div class="intro__bottom">
-				<div class="intro__offer">
-					<div class="intro__offer-content">
-						<span class="offer-text">Светодиоды оптом по самым низким ценам в России!</span>
-						<ul class="offer-list">
-							<li class="offer-item">Прямая поставка на ваш объект с собственного производства от <strong>1 дня!</strong></li>
-							<li class="offer-item">Минимальный объем поставки <strong>20 000 рублей!</strong></li>
-						</ul>
+		<div class="section-inner  section-inner--intro">
+			<div class="intro-top">
+				<!-- ЛОГОТИП -->
+				<img src="img/logo-beeline.png" alt="Билайн" class="logo" width="140px" height="40px">
+				<!-- НАВИГАЦИЯ -->
+				<nav class="main-nav">
+					<ul class="nav-list">
+						<li class="nav-item  nav-item--search-city">
+							<a href="#" class="nav-item__link  nav-item__link--search-city">Москва</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link">Спецтариф</a>
+						</li>
+						<li class="nav-item  nav-item--tariffes">
+							<a href="#" class="nav-item__link  nav-item__link--tariffes">Тарифы</a>
+							<!-- ПОДМЕНЮ -->
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#" class="submenu-item__link">Тариф "Всё"</a>
+								</li>
+								<li class="submenu-item">
+									<a href="#" class="submenu-item__link">Тариф "3 в 1"</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link">Оборудование</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link">Подключить</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- ТЕЛЕФОНЫ -->
+				<div class="phone-block">
+					<div class="phone-connect">
+						<span class="phone-connect-text">Отдел подключений</span>
+						<span class="phone-connect-number">8 905 660 5550</span>
+					</div>
+					<div class="phone-support">
+						<span class="phone-support-text">Техподдержка</span>
+						<span class="phone-support-number">8 800 700 8000</span>
 					</div>
 				</div>
-				<div class="intro__form  form">
-					<div class="form-content">
-						<p class="form-text">Заполните заявку прямо сейчас и Получите коммерческое предложение в течение 15 минут!</p>
-						<!-- ФОРМА ОТПРАВКИ -->
-						<form  id="form" class="contact-form">
-							<div class="form-input-area">
-								<div class="form-control-area">
-									<label for="name">Введите ваше имя:</label>
-									<input name="name" type="text" class="form-control" id="name" required>
-								</div>
-								<div class="form-control-area">
-									<label for="phone">Введите телефон:</label>
-									<div class="form-control-phone">
-										<input name="name" type="text" class="form-control" id="phone" required>
-									</div>
-								</div>
-								<div class="form-control-area">
-									<label for="email">Введите Email:</label>
-									<div class="form-control-email">
-										<input type="email" name="email" class="form-control" id="email" required>
-									</div>
-								</div>
-							</div>
-							<div class="btn-wrap">
-							<div class="agreement-1">
-									<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-									<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-								</div>
-								<div class="form-control-btn">
-									<input type="submit" class="contact-form__btn" value="Получить предложение!">
-								</div>
-							</div>
-							<!-- Hidden Required Fields -->
-							<input type="hidden" name="project_name" value="Site Name">
-							<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
-							<input type="hidden" name="form_subject" value="прайс-лист Офисных светильников">
-							<!-- END Hidden Required Fields -->
-						</form>
-					<div class="agreement-2">
-							<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-							<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
+			</div> <!-- end of  .intro-top-->
 
-	<!-- СЕКЦИЯ ВАШИ ВЫГОДЫ -->
-	<section class="benefits">
-			<h2 class="section__title  section__title--benefits"><span>Ваши выгоды</span></h2>
-			<ul class="benefits__list">
-				<li class="benefit  benefit--low-price">
-					<h3 class="benefit__title">Самые низкие цены на рынке</h3>
-					<p class="benefit__text">Гарантия на светильники 10 лет.</p>
-				</li>
-				<li class="benefit  benefit--time">
-					<h3 class="benefit__title">100% выполнение сроков</h3>
-					<p class="benefit__text">Срок сборки и поставки от 1 дня. Выплачиваем компенсацию за каждый день в случае просрочки. Быстрая доставка по России.</p>
-				</li>
-				<li class="benefit  benefit--assortment">
-					<h3 class="benefit__title">Широчайший ассортимент</h3>
-					<p class="benefit__text">Более 1200 наименований. Всегда в наличии на складе.</p>
-				</li>
-				<li class="benefit  benefit--big-case">
-					<h3 class="benefit__title">Обработка сверхкрупных заказов</h3>
-					<p class="benefit__text">Поставим до 10 000 светильников в сжатые сроки по всей России.</p>
-				</li>
-				<li class="benefit  benefit--project">
-					<h3 class="benefit__title">Проектирование и монтаж</h3>
-					<p class="benefit__text">Выезд специалиста на ваш объект.</p>
-				</li>
-				<li class="benefit  benefit--equipment">
-					<h3 class="benefit__title">Индивидуальная комплектация</h3>
-					<p class="benefit__text">Изготовим любые нестандартные светильники под ваш объект.</p>
-				</li>
-			</ul>
-	</section>
-
-	<!-- СЕКЦИЯ С ЦЕНАМИ -->
-	<section class="price">
-			<h2 class="section__title  section__title--price"><span>Наши цены</span></h2>
-			<!-- Офисные светильники -->
-			<div class="price__office">
-				<h3 class="price__title">Офисные светильники</h3>
-				<ul class="price__list">
-					<li class="price__item">
-						<div class="item-info">
-							<img src="img/lamp.jpg" alt="Армстронг Эконом" class="item-img">
-							<div class="item-disc">
-								<h4 class="item-title">
-									<a href="#" class="item-link">Светодиодный потолочный светильник Армстронг Эконом</a>
-								</h4>
-								<p class="item-text">Универсальный потолочный светильник Армстронг 27W - 3200Lm. Эконом эффективный универсальный.</p>
-							</div>
-						</div>
-						<div class="item-price">
-							<div class="price-text">от <span class="price-number">1250</span><br/>Руб.</div>
-							<div class="item-amount">
-								<img src="img/battery2.png" class="amount-img">
-								<div class="amount-info">
-									<span class="amount-number">761</span>
-									<span class="amount-text">на складе</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="price__item">
-						<div class="item-info">
-							<img src="img/lamp.jpg" alt="Армстронг Стандарт" class="item-img">
-							<div class="item-disc">
-								<h4 class="item-title">
-									<a href="#" class="item-link">Светодиодный потолочный светильник Армстронг Стандарт</a>
-								</h4>
-								<p class="item-text">Универсальный потолочный светильник Армстронг 27W - 3200Lm. Стандарт эффективный универсальный.</p>
-							</div>
-						</div>
-						<div class="item-price">
-							<div class="price-text">от <span class="price-number">1490</span><br/>Руб.</div>
-							<div class="item-amount">
-								<img src="img/battery1.png" class="amount-img">
-								<div class="amount-info">
-									<span class="amount-number">1351</span>
-									<span class="amount-text">на складе</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="price__item">
-						<div class="item-info">
-							<img src="img/lamp.jpg" alt="Армстронг Макси" class="item-img">
-							<div class="item-disc">
-								<h4 class="item-title">
-									<a href="#" class="item-link">Светодиодный потолочный светильник Армстронг Макси</a>
-								</h4>
-								<p class="item-text">Универсальный потолочный светильник Армстронг 27W - 3200Lm. Макси эффективный универсальный.</p>
-							</div>
-						</div>
-						<div class="item-price">
-							<div class="price-text">от <span class="price-number">1490</span><br/>Руб.</div>
-							<div class="item-amount">
-								<img src="img/battery1.png" class="amount-img">
-								<div class="amount-info">
-									<span class="amount-number">1289</span>
-									<span class="amount-text">на складе</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="price__item">
-						<div class="item-info">
-							<img src="img/lamp.jpg" alt="Армстронг Макси" class="item-img">
-							<div class="item-disc">
-								<h4 class="item-title">
-									<a href="#" class="item-link">Офисный светодиодный потолочный светильник Армстронг</a>
-								</h4>
-								<p class="item-text">Универсальный потолочный светильник Армстронг 32W - 3700Lm. Стандарт эффективный универсальный 2.</p>
-							</div>
-						</div>
-						<div class="item-price">
-							<div class="price-text">от <span class="price-number">1550</span><br/>Руб.</div>
-							<div class="item-amount">
-								<img src="img/battery2.png" class="amount-img">
-								<div class="amount-info">
-									<span class="amount-number">1032</span>
-									<span class="amount-text">на складе</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="price__item">
-						<div class="item-info">
-							<img src="img/lamp.jpg" alt="Армстронг Макси" class="item-img">
-							<div class="item-disc">
-								<h4 class="item-title">
-									<a href="#" class="item-link">Офисный светодиодный потолочный светильник Армстронг</a>
-								</h4>
-								<p class="item-text">Универсальный потолочный светильник Армстронг 36W - 4300Lm. LUX Супер эффективный универсальный.</p>
-							</div>
-						</div>
-						<div class="item-price">
-							<div class="price-text">от <span class="price-number">2090</span><br/>Руб.</div>
-							<div class="item-amount">
-								<img src="img/battery1.png" class="amount-img">
-								<div class="amount-info">
-									<span class="amount-number">1223</span>
-									<span class="amount-text">на складе</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="price__item">
-						<div class="item-info">
-							<img src="img/lamp.jpg" alt="Армстронг Макси" class="item-img">
-							<div class="item-disc">
-								<h4 class="item-title">
-									<a href="#" class="item-link">Светодиодный потолочный светильник Армстронг</a>
-								</h4>
-								<p class="item-text">Универсальный потолочный светильник Армстронг 48W - 5300Lm. Стандарт эффективный универсальный 3.</p>
-							</div>
-						</div>
-						<div class="item-price">
-							<div class="price-text">от <span class="price-number">2290</span><br/>Руб.</div>
-							<div class="item-amount">
-								<img src="img/battery3.png" class="amount-img">
-								<div class="amount-info">
-									<span class="amount-number">1223</span>
-									<span class="amount-text">на складе</span>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<!-- Форма офисных светильников -->
-				<div class="form  form-price  form-price--office">
-					<div class="form-content">
-						<p class="form-text  form-text--price">Получите прайс-лист Офисных светильников прямо сейчас</p>
-						<form class="contact-form">
-							<div class="form-input-area">
-								<div class="form-control-area">
-									<label for="phone">Введите телефон:</label>
-									<div class="form-control-phone">
-										<input name="name" type="text" class="form-control" id="phone" required>
-									</div>
-								</div>
-								<div class="form-control-area">
-									<label for="email">Введите Email:</label>
-									<div class="form-control-email">
-										<input type="email" name="email" class="form-control" id="email" required>
-									</div>
-								</div>
-							</div>
-							<div class="btn-wrap">
-								<div class="agreement-1">
-									<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-									<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-								</div>
-								<div class="form-control-btn">
-									<input type="submit" class="contact-form__btn" value="Получить прайс!">
-								</div>
-							</div>
-							<!-- Hidden Required Fields -->
-							<input type="hidden" name="project_name" value="Site Name">
-							<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
-							<input type="hidden" name="form_subject" value="прайс-лист Офисных светильников">
-							<!-- END Hidden Required Fields -->
-						</form>
-						<div class="agreement-2">
-							<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-							<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-						</div>
-					</div>
+			<div class="intro-bottom">
+				<h1 class="page-title">Беспроводный интернет Билайн проводной или по Wi-Fi</h1>
+				<div class="intro-text">
+					<span class="intro-text-top">Скорость 100 Мбит/с</span>
+					<span class="intro-text-bottom">тариф Супер Промо <strong>100 Мбит</strong> - 450 р/месяц</span>
 				</div>
-			</div>
-		</div>
-		<!-- Промышленные светильники -->
-		<div class="price__industrial">
-			<h3 class="price__title">Промышленные светильники</h3>
-			<ul class="price__list">
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-2.jpg" alt="Айсберг" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светильник светодиодный промышленный Айсберг</a>
-							</h4>
-							<p class="item-text">Универсальный промышленный светильник Айсберг 27W, 3200Lm, IP65, 220V, 1270*150*100, цвет холодный белый, теплый белый, нейтральный белый.</p>
+				<!-- ФОРМА ЗАЯВКИ -->
+				<div class="forms-block">
+				<div class="request">
+					<form class="request-form">
+						<span class="request-text">Оставьте заявку <br/>на бесплатное подключение</span>
+						<span class="our-manager">Вам перезвонит наш менеджер</span>
+						<div class="form-area">
+							<input name="phone" type="text" class="phone-input" placeholder="Введите номер..." required>
+							<input type="submit" class="request-form-btn" value="Оставить заявку">
 						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">1370</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery1.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">1380</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-2.jpg" alt="Айсберг" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светильник светодиодный промышленный Айсберг</a>
-							</h4>
-							<p class="item-text">Универсальный промышленный светильник Айсберг 36W, 4300Lm, IP65, 220V, 1270*150*100, цвет холодный белый, теплый белый, нейтральный белый.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">1690</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery2.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">851</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-2.jpg" alt="Айсберг" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светильник светодиодный промышленный Айсберг</a>
-							</h4>
-							<p class="item-text">Универсальный промышленный светильник Айсберг 48W, 5700Lm, IP65, 220V, 1270*150*100, цвет холодный белый, теплый белый, нейтральный белый.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">2160</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery1.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">1249</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-3.jpg" alt="Светильник светодиодный" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светильник светодиодный промышленно-складской купольный</a>
-							</h4>
-							<p class="item-text">Универсальный промышленный светильник купольный 150W, 16000Lm, 180-240V, цвет холодный белый (6000-6500K), теплый белый, IP44.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">6970</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery1.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">1203</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-
-			<!-- Форма промышленных светильников -->
-			<div class="form  form-price  form-price--industrial">
-				<div class="form-content">
-					<p class="form-text  form-text--price">Получите прайс-лист Промышленных светильников прямо сейчас</p>
-					<form class="contact-form">
-						<div class="form-input-area">
-							<div class="form-control-area">
-								<label for="phone">Введите телефон:</label>
-								<div class="form-control-phone">
-									<input name="name" type="text" class="form-control" id="phone" required>
-								</div>
-							</div>
-							<div class="form-control-area">
-								<label for="email">Введите Email:</label>
-								<div class="form-control-email">
-									<input type="email" name="email" class="form-control" id="email" required>
-								</div>
-							</div>
-						</div>
-						<div class="btn-wrap">
-							<div class="agreement-1">
-								<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-								<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-							</div>
-							<div class="form-control-btn">
-								<input type="submit" class="contact-form__btn" value="Получить прайс!">
+						<span class="anti-spam">Контактная информация защищена от спама</span>
+						<div class="agreement-wrap">
+							<!-- <span class="confirm">Подтвердите соглаcие на обработку персональных данных!</span> -->
+							<div class="agree">
+								<input type="checkbox"  id="agree" checked  class="agree-checkbox">
+								<label for="agree" class="agree-label">
+									Согласен на <a href="#" class="agree-link">обработку персональных данных</a>
+								</label>
 							</div>
 						</div>
 						<!-- Hidden Required Fields -->
 						<input type="hidden" name="project_name" value="Site Name">
-						<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
-						<input type="hidden" name="form_subject" value="прайс-лист Промышленных светильников">
+						<input type="hidden" name="admin_email" value="email@mail.com">
+						<input type="hidden" name="form_subject" value="тариф Супер промо">
 						<!-- END Hidden Required Fields -->
 					</form>
-					<div class="agreement-2">
-						<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-						<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-					</div>
-				</div>
-			</div>
-		</div>
+				</div> <!--  end of ФОРМА ЗАЯВКИ -->
 
-		<!-- Уличные светильники -->
-		<div class="price__strit">
-			<h3 class="price__title">Уличные светильники</h3>
-			<ul class="price__list">
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-4.png" alt="Светодиодный светильник" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный светильник уличный</a>
-							</h4>
-							<p class="item-text">Универсальный уличный светильник 60W/ 5100Lm/ 220V/ IP65.</p>
-						</div>
+				<!-- ФОРМА НАПИСАТЬ СООБЩЕНИЕ -->
+				<div class="message">
+					<div class="message-form-header">
+						<!-- <img src="#" alt="Beeline" class="message-form-photo" width="36px" height="36px"> -->
+						<span class="message-text">Задайте Ваш вопрос!</span>
 					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">4470</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery2.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">893</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-4.png" alt="Светодиодный светильник" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный светильник уличный Бабочка</a>
-							</h4>
-							<p class="item-text">Универсальный уличный светильник Бабочка 80W/ 8800Lm/ 220V/ IP65.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">4290</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery3.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">615</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-4.png" alt="Светодиодный светильник" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный светильник уличный</a>
-							</h4>
-							<p class="item-text">Универсальный уличный светильник 90W/ 7600Lm/ 220V/ IP65.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">5890</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery1.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">1523</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-4.png" alt="Светодиодный светильник" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный светильник уличный Бабочка</a>
-							</h4>
-							<p class="item-text">Универсальный уличный светильник Бабочка 160W/ 17600Lm/ 220V/ IP65.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">8550</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery1.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">1213</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<!-- Форма Уличных светильников -->
-			<div class="form  form-price  form-price--strit">
-				<div class="form-content">
-					<p class="form-text  form-text--price">Получите прайс-лист Уличных светильников прямо сейчас</p>
-					<form class="contact-form">
-						<div class="form-input-area">
-							<div class="form-control-area">
-								<label for="phone">Введите телефон:</label>
-								<div class="form-control-phone">
-									<input name="name" type="text" class="form-control" id="phone" required>
-								</div>
-							</div>
-							<div class="form-control-area">
-								<label for="email">Введите Email:</label>
-								<div class="form-control-email">
-									<input type="email" name="email" class="form-control" id="email" required>
-								</div>
-							</div>
-						</div>
-						<div class="btn-wrap">
-						<div class="agreement-1">
-								<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-								<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-							</div>
-							<div class="form-control-btn">
-								<input type="submit" class="contact-form__btn" value="Получить прайс!">
-							</div>
+					<form class="message-form">
+						<div class="message-form-area">
+							<input name="name" type="text" class="message-control" placeholder="Ваше имя...">
+							<input name="phone" type="text" class="message-control" placeholder="Ваш телефон..." required>
+							<input type="email" name="email" class="message-control" placeholder="Обратный E-mail" required>
+							<textarea class="message-control-text" name="message" rows="5" cols="20" placeholder="Введите Ваше сообщение и нажмите кнопку &#8243;Отправить&#8243;"></textarea>
+							<input type="submit" class="message-form-btn" value="Отправить">
 						</div>
 						<!-- Hidden Required Fields -->
 						<input type="hidden" name="project_name" value="Site Name">
-						<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
-						<input type="hidden" name="form_subject" value="прайс-лист Уличных светильников">
+						<input type="hidden" name="admin_email" value="email@mail.com">
+						<input type="hidden" name="form_subject" value="тариф Супер промо">
 						<!-- END Hidden Required Fields -->
 					</form>
-				<div class="agreement-2">
-						<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-						<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-					</div>
 				</div>
-			</div>
-		</div>
 
-		<!-- Прожекторы -->
-		<div class="price__projector">
-			<h3 class="price__title">Прожекторы</h3>
-			<ul class="price__list">
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-5.jpg" alt="Прожектор" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный прожектор 30W</a>
-							</h4>
-							<p class="item-text">Светодиодный прожектор 30W, IP65, цвет белый, 220V.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">990</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery3.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">600</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-5.jpg" alt="Прожектор" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный прожектор 50W</a>
-							</h4>
-							<p class="item-text">Светодиодный прожектор 50W, IP65, цвет белый, 220V.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">1320</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery1.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">1179</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="price__item">
-					<div class="item-info">
-						<img src="img/lamp-5.jpg" alt="Прожектор" class="item-img">
-						<div class="item-disc">
-							<h4 class="item-title">
-								<a href="#" class="item-link">Светодиодный прожектор 100W</a>
-							</h4>
-							<p class="item-text">Светодиодный прожектор 100W, IP65, цвет белый / EPISTAR / 220V.</p>
-						</div>
-					</div>
-					<div class="item-price">
-						<div class="price-text">от <span class="price-number">3450</span><br/>Руб.</div>
-						<div class="item-amount">
-							<img src="img/battery2.png" class="amount-img">
-							<div class="amount-info">
-								<span class="amount-number">712</span>
-								<span class="amount-text">на складе</span>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<!-- Форма Прожекторов -->
-			<div class="form  form-price  form-price--projector">
-				<div class="form-content">
-					<p class="form-text  form-text--price">Получите прайс-лист Светодиодных прожекторов прямо сейчас</p>
-					<form class="contact-form">
-						<div class="form-input-area">
-							<div class="form-control-area">
-								<label for="phone">Введите телефон:</label>
-								<div class="form-control-phone">
-									<input name="phone" type="text" class="form-control" id="phone" required>
-								</div>
-							</div>
-							<div class="form-control-area">
-								<label for="email">Введите Email:</label>
-								<div class="form-control-email">
-									<input type="email" name="email" class="form-control" id="email" required>
-								</div>
-							</div>
-						</div>
-						<div class="btn-wrap">
-							<div class="agreement-1">
-								<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-								<label for="agreement" class="agreement-label"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-							</div>
-							<div class="form-control-btn">
-								<input type="submit" class="contact-form__btn" value="Получить прайс!">
-							</div>
-						</div>
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Site Name">
-						<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
-						<input type="hidden" name="form_subject" value="прайс-лист Светодиодных прожекторов">
-						<!-- END Hidden Required Fields -->
-					</form>
-					<div class="agreement-2">
-						<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-						<label for="agreement"><a href="#" class="agreement-link">Соглашение об обработке персональных данных</a></label>
-					</div>
-				</div>
-			</div>
+			</div> <!-- end of .intro-bottom-->
 		</div>
 	</section>
+	<!-- end of ПЕРВЫЙ ЭКРАН -->
 
-	<!-- CЕКЦИЯ НАШИ СЕРТИФИКАТЫ -->
-	<section class="certificates">
-			<h2 class="section__title  section__title--certificates"><span>Все светильники сертифицированы</span></h2>
-			<div class="certificates__list">
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-				<div class="certificates__item">
-					<a data-fancybox="certificates__gallery" href="img/big.jpg" class="certificates__link">
-						<img src="img/small.jpg" alt="Сертификат" class="certificates__img">
-					</a>
-				</div>
-			</div>
+	<!-- ВТОРОЙ ЭКРАН -->
+	<section class="features">
+		<h2 class="section-title"></h2>
+		<p class="section-text"></p>
+	</section>
+	<!-- end of ВТОРОЙ ЭКРАН -->
+
+	<section class="section">
+		<h2 class="section-title"></h2>
+		<p class="section-text"></p>
 	</section>
 
-	<!-- СЕКЦИЯ НАШИ ПАРТНЕРЫ -->
-	<section class="partners">
-		<h2 class="section__title  section__title--partners"><span>С нами работают</span></h2>
-		<div class="partners__list">
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-			<div class="partners__item"><img src="#" alt="Наш партнер" class="partners__img"></div>
-		</div>
+	<section class="section">
+		<h2 class="section-title"></h2>
+		<p class="section-text"></p>
 	</section>
 
-	<!-- СЕКЦИЯ НАШИ РАБОТЫ -->
-	<section class="works">
-		<h2 class="section__title  section__title--works"><span>Наши работы</span></h2>
-		<article class="work">
-			<div class="work__inner">
-			<div class="work__photo">
-				<img src="img/ростикс-1.jpg" alt="Ростикс" class="main-photo">
-				<div class="min-photos">
-					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
-				</div>
-			</div>
-			<div class="review">
-				<div class="review__info">
-					<h3 class="review__title">
-						<span class="object">Ростикс</span>
-						<span class="city">г. Москва</span>
-					</h3>
-					<span class="delivery">Поставка - <span class="delivery__number">985 светильников.</span></span>
-					<span class="delivery-time">Срок - <span class="delivery-time__number">14 дней.</span></span>
-				</div>
-				<div class="client">
-					<div class="client__photos">
-						<img src="img/logo-client.png" alt="" class="client-logo">
-						<img src="img/photo-client.png" alt="" class="client-photo">
-					</div>
-					<div class="client-info">
-						<span class="name-client">Малькин В.А.</span>
-						<span class="post-client">Директор ООО "Ростикс"</span>
-					</div>
-				</div>
-				<p class="client__review">"При переоборудовании ресторана общественного питания было принято решение о замене люминисцентных светильников на светодиодные. По рекомендации мы обратились в ООО "ВСЕСВЕТОДИОДЫ". Сотрудники компании грамотно подобрали и рассчитали количество светильников на наше помещение. При установке выяснилось, что потребовалось меньшее количество светильников, чем количество ранее установленных, значительно уменьшилась величина потребляемой мощности - более чем в 3 раза, снизились пусковые токи, повысились показатели освещенности, рабочий персонал высоко оценил качество освещения. Полученные результаты эксплуатации показывают энергоэффективность применения светодиодных светильников. И самое главное, что понравилось - это быстрый срок поставки, на довольно большое количество, хочу заметить, ни одна компания куда мы обращались не смогла сработать так оперативно. Надеемся на дальнейшее взаимовыгодное сотрудничество."</p>
-			</div>
-			</div>
-		</article> <!-- end of article -->
-		<article class="work">
-			<div class="work__inner">
-			<div class="work__photo">
-				<img src="img/ростикс-1.jpg" alt="Ростикс" class="main-photo">
-				<div class="min-photos">
-					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
-					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
-					<img src="img/ростикс-2.jpg" alt="Ростикс" class="min-photo">
-				</div>
-			</div>
-			<div class="review">
-				<div class="review__info">
-					<h3 class="review__title">
-						<span class="object">Каширский двор</span>
-						<span class="city">г. Москва</span>
-					</h3>
-					<span class="delivery">Поставка - <span class="delivery__number">2612 светильников.</span></span>
-					<span class="delivery-time">Срок - <span class="delivery-time__number">19 дней.</span></span>
-				</div>
-				<div class="client">
-					<div class="client__photos">
-						<img src="img/logo-client.png" alt="" class="client-logo">
-						<img src="img/photo-client.png" alt="" class="client-photo">
-					</div>
-					<div class="client-info">
-						<span class="name-client">Кравец Д.А.</span>
-						<span class="post-client">Директор "Каширский двор"</span>
-					</div>
-				</div>
-				<p class="client__review">"В качестве эксперимента, заменили часть светильников в нашем Торговом центре с люминисцентных на светодиодные. Эффект превзошел самые смелые ожидания. Снижение расходов на электроэнергию в 3 раза, без проблем прошли обязательную аттестацию рабочих мест, повысился имидж компании, как перед сотрудниками, так и перед клиентами. Так же наглядно видна разница в степени освещения. За небольшой период времени эксплуатации было выявлено следующее: значительное снижение потребления электроэнергии, отсутствие эксплуатационных расходов за счет исключения работ по замене ламп ДРЛ, нечувствительность данных светильников к перепадам напряжения. Следует также отметить простоту и удобство монтажа и современный дизайн светильников. Считаем решение о применении светодиодных энергосберегающих светильников Армстронг производства Компании "ВСЕСВЕТОДИОДЫ" обоснованным и экономически эффективным. У нас никто не сомневается в том, что в остальных филиалах мы тоже будем ставить ваши светильники, тем более еще главный момент, это оперативность в самые сжатые сроки. Спасибо за сотрудничество."</p>
-			</div>
-			</div>
-		</article> <!-- end of article -->
-		<article class="work">
-			<div class="work__inner">
-			<div class="work__photo">
-				<img src="img/ростикс-1.jpg" alt="Ростикс" class="main-photo">
-			</div>
-			<div class="review">
-				<div class="review__info">
-					<h3 class="review__title">
-						<span class="object">Освещение дорог и улиц уличными светодиодными светильниками</span>
-						<span class="city">г. Иркутск</span>
-					</h3>
-					<span class="delivery">Поставка - <span class="delivery__number">3250 светильников.</span></span>
-					<span class="delivery-time">Срок - <span class="delivery-time__number">30 дней.</span></span>
-				</div>
-				<div class="client">
-					<div class="client__photos">
-						<img src="img/logo-client.png" alt="" class="client-logo">
-						<img src="img/photo-client.png" alt="" class="client-photo">
-					</div>
-					<div class="client-info">
-						<span class="name-client">Кондрашов В.И.</span>
-						<span class="post-client">Заместитель мэра г. Иркутск</span>
-					</div>
-				</div>
-				<p class="client__review">"В г. Иркутске прошла модернизация систем наружного освещения. На замену устаревшим РКУ - с лампой ДРЛ пришли современные светодиодные светильники. Приборы этой серии эффективно начинают применять в освещении улиц и дорог различных категорий, а также дворов и площадей. Основные особенности: белый спектр излучения, хороший индекс цветопередачи, отсутствие пульсации светового потока, отсутствие ослепленности. В интеренете нашли компанию "ВСЕСВЕТОДИОДЫ", сбросили спецификацию на расчет светодиодных уличных светильников, очень быстро сделали расчет и нас это заинтересовало. Сделали заказ и очень оперативно наши светильники были отправлены без задержек. Это очень нас обрадовало. Когда быди смонтированы светильники сразу стала комфортная и безопасная обстановка на дорогах. Светильники обеспечивают высокую и стабильную освещенность, благодаря чему достигается большая экономия электроэнергии при отсутствии затрат на обслуживание."</p>
-			</div>
-			</div>
-		</article> <!-- end of article -->
+	<section class="section">
+		<h2 class="section-title"></h2>
+		<p class="section-text"></p>
 	</section>
 
-	<!-- СЕКЦИЯ КОНТАКТЫ -->
-	<section class="contacts">
-		<h2 class="section__title  section__title--contacts"><span>Контакты</span></h2>
-		<div class="contacts__inner">
-			<div class="contacts__area">
-				<h3 class="contacts__info-title">Контактная информация</h3>
-				<div class="contacts__info">
-					<div class="address-block">
-						<span class="address-text">Наш адрес:</span>
-						<span class="address">Адрес</span>
-					</div>
-					<div class="phone-block">
-						<span class="phone-text">Можно позвонить по телефонам:</span>
-						<span class="phone">8 800 123 12 12</span>
-					</div>
-				</div>
-				<!-- ФОРМА ОТПРАВКИ -->
-				<div class="form  form--contacts">
-					<div class="form-content  form-content--contacts">
-						<form method="post" class="contact-form  contact-form--contacts">
-							<h4 class="form-title">Остались вопросы?</h4>
-							<div class="form-input-area">
-								<div class="form-control-area">
-									<label for="email">Введите Email:</label>
-									<div class="form-control-email">
-										<input type="email" name="email" class="form-control" id="email" required>
-									</div>
-								</div>
-								<div class="form-control-area">
-									<label for="message">Суть вопроса:</label>
-									<textarea class="message" id="message" rows="4" cols="20"></textarea>
-								</div>
-							</div>
-							<div class="btn-wrap">
-								<div class="agreement-1  agreement-1--contacts">
-									<input type="checkbox" id="agreement" checked class="agreement-checkbox">
-									<label for="agreement" class="agreement-label">
-										<a href="#" class="agreement-link">Соглашение об обработке персональных данных</a>
-									</label>
-								</div>
-								<div class="form-control-btn  form-control-btn--contacts">
-									<input type="submit" class="contact-form__btn" value="Задать вопрос!">
-								</div>
-							</div>
-
-							<!-- Hidden Required Fields -->
-							<input type="hidden" name="project_name" value="Site Name">
-							<input type="hidden" name="admin_email" value="tatyana8787@gmail.com">
-							<input type="hidden" name="form_subject" value="Остались вопросы?">
-							<!-- END Hidden Required Fields -->
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- КАРТА -->
-			<div class="contacts__area">
-				<h3 class="contacts__map-title">Как добраться?</h3>
-				<div class="map">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac621bad9849db6d9d4fefefa83dfefa55078e84c75e5feca4f9ad48860c5cd69&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- СООБЩЕНИЕ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
-	<div class="success">
-		<span class="success-text">Спасибо!<br/> Мы обязательно вышлем Вам наше коммерческое предложение.
-			<button class="btn-close">
-				<svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<path style="fill:#000;" d="M284.3,245.1l110.9-110.9c7.8-7.8,7.8-20.5,0-28.3s-20.5-7.8-28.3,0L256,216.8L145.1,105.9  c-7.8-7.8-20.5-7.8-28.3,0s-7.8,20.5,0,28.3l110.9,110.9L116.9,355.9c-7.8,7.8-7.8,20.5,0,28.3c3.9,3.9,9,5.9,14.1,5.9  c5.1,0,10.2-2,14.1-5.9L256,273.3l110.9,110.9c3.9,3.9,9,5.9,14.1,5.9s10.2-2,14.1-5.9c7.8-7.8,7.8-20.5,0-28.3L284.3,245.1z"/>
-				</svg>
-			</button>
-		</span>
-	</div>
-
-	<!--  СКРИПТЫ  -->
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
