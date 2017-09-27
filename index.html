@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>UMobile</title>
+	<title>Билайн</title>
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -13,9 +13,13 @@
 		<div class="section-inner  section-inner--intro">
 			<div class="intro-top">
 				<!-- ЛОГОТИП -->
-				<img src="img/logo-beeline.png" alt="Билайн" class="logo" width="140px" height="40px">
+				<img src="img/logo-beeline.png" alt="Билайн" class="logo" widtd="140px" height="40px">
 				<!-- НАВИГАЦИЯ -->
 				<nav class="main-nav">
+					<!-- КНОПКА МЕНЮ -->
+					<div class="main-nav-toggle">
+						<span class="toggle-text">Меню</span>
+					</div>
 					<ul class="nav-list">
 						<li class="nav-item  nav-item--search-city">
 							<a href="#" class="nav-item__link  nav-item__link--search-city">Москва</a>
@@ -23,17 +27,14 @@
 						<li class="nav-item">
 							<a href="#" class="nav-item__link">Спецтариф</a>
 						</li>
-						<li class="nav-item  nav-item--tariffes">
-							<a href="#" class="nav-item__link  nav-item__link--tariffes">Тарифы</a>
-							<!-- ПОДМЕНЮ -->
-							<ul class="submenu-list">
-								<li class="submenu-item">
-									<a href="#" class="submenu-item__link">Тариф "Всё"</a>
-								</li>
-								<li class="submenu-item">
-									<a href="#" class="submenu-item__link">Тариф "3 в 1"</a>
-								</li>
-							</ul>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link">Тарифы</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link">Тариф "Всё"</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link">Тариф "3 в 1"</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-item__link">Оборудование</a>
@@ -46,40 +47,38 @@
 				<!-- ТЕЛЕФОНЫ -->
 				<div class="phone-block">
 					<div class="phone-connect">
-						<span class="phone-connect-text">Отдел подключений</span>
-						<span class="phone-connect-number">8 905 660 5550</span>
+						<span class="phone-connect-text">Отдел подключения</span>
+						<a class="phone-connect-number" href="tel:+89056605550">8 905 660 55 50</a>
 					</div>
 					<div class="phone-support">
-						<span class="phone-support-text">Техподдержка</span>
-						<span class="phone-support-number">8 800 700 8000</span>
+						<span class="phone-support-text">Техническая поддержка</span>
+						<a class="phone-support-number" href="tel:+89056605550">8 800 700 80 00</a>
 					</div>
 				</div>
 			</div> <!-- end of  .intro-top-->
 
 			<div class="intro-bottom">
-				<h1 class="page-title">Беспроводный интернет Билайн проводной или по Wi-Fi</h1>
+				<h1 class="page-title">Беспроводной интернет Билайн</h1>
 				<div class="intro-text">
 					<span class="intro-text-top">Скорость 100 Мбит/с</span>
-					<span class="intro-text-bottom">тариф Супер Промо <strong>100 Мбит</strong> - 450 р/месяц</span>
+					<span class="intro-text-bottom">тариф <strong>Супер Промо 100 Мбит</strong> - 450 р/месяц</span>
 				</div>
 				<!-- ФОРМА ЗАЯВКИ -->
 				<div class="forms-block">
 				<div class="request">
 					<form class="request-form">
 						<span class="request-text">Оставьте заявку <br/>на бесплатное подключение</span>
-						<span class="our-manager">Вам перезвонит наш менеджер</span>
+						<span class="our-manager">Перезвоним в рабочее время</span>
 						<div class="form-area">
 							<input name="phone" type="text" class="phone-input" placeholder="Введите номер..." required>
 							<input type="submit" class="request-form-btn" value="Оставить заявку">
 						</div>
-						<span class="anti-spam">Контактная информация защищена от спама</span>
+						<span class="anti-spam">Пожалуйста, введите номер на который мы сможем дозвониться.</span>
 						<div class="agreement-wrap">
 							<!-- <span class="confirm">Подтвердите соглаcие на обработку персональных данных!</span> -->
 							<div class="agree">
 								<input type="checkbox"  id="agree" checked  class="agree-checkbox">
-								<label for="agree" class="agree-label">
-									Согласен на <a href="#" class="agree-link">обработку персональных данных</a>
-								</label>
+								<label for="agree" class="agree-label">Согласен на обработку персональных данных</label>
 							</div>
 						</div>
 						<!-- Hidden Required Fields -->
@@ -88,12 +87,12 @@
 						<input type="hidden" name="form_subject" value="тариф Супер промо">
 						<!-- END Hidden Required Fields -->
 					</form>
-				</div> <!--  end of ФОРМА ЗАЯВКИ -->
+				</div> <!--  end ФОРМА ЗАЯВКИ -->
 
 				<!-- ФОРМА НАПИСАТЬ СООБЩЕНИЕ -->
 				<div class="message">
 					<div class="message-form-header">
-						<!-- <img src="#" alt="Beeline" class="message-form-photo" width="36px" height="36px"> -->
+						<!-- <img src="#" alt="Beeline" class="message-form-photo" widtd="36px" height="36px"> -->
 						<span class="message-text">Задайте Ваш вопрос!</span>
 					</div>
 					<form class="message-form">
@@ -112,26 +111,247 @@
 					</form>
 				</div>
 
-			</div> <!-- end of .intro-bottom-->
+			</div> <!-- end intro-bottom-->
 		</div>
 	</section>
-	<!-- end of ПЕРВЫЙ ЭКРАН -->
+	<!-- end ПЕРВЫЙ ЭКРАН -->
 
 	<!-- ВТОРОЙ ЭКРАН -->
 	<section class="features">
-		<h2 class="section-title"></h2>
-		<p class="section-text"></p>
+		<div class="section-inner">
+			<h2 class="section-title">Каким интернетом Вы хотите пользоваться?</h2>
+			<div class="features-blocks">
+			<div class="features-block">
+				<span class="features-block-header">Тарифный план "Супер 100"</span>
+				<img src="#" alt="картинка" widtd="250" height="350">
+				<span class="text">100мб/с</span>
+				<span class="text">450руб/мес</span>
+			</div>
+			<div class="features-block">
+				<span class="features-block-header">Интернет должен быть:</span>
+				<ul class="features-list">
+					<li class="features-item">Безлимитный</li>
+					<li class="features-item">по Wi-Fi или проводной</li>
+					<li class="features-item">Стабильный</li>
+					<li class="features-item">Скоростной</li>
+					<li class="features-item">Недорогой</li>
+				</ul>
+				<button class="btn-to-connect  btn-to-connect--features">Подключить</button>
+			</div>
+			</div>
+		</div>
 	</section>
-	<!-- end of ВТОРОЙ ЭКРАН -->
+	<!-- end ВТОРОЙ ЭКРАН -->
 
-	<section class="section">
-		<h2 class="section-title"></h2>
-		<p class="section-text"></p>
+	<section class="tariffes">
+		<div class="section-inner">
+			<h2 class="section-title  section-title--tariffes">Тарифы</h2>
+
+			<!-- Таблица -->
+			<table class="table">
+				<caption>ДОМАШНИЙ ИНТЕРНЕТ И ТВ</caption>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Шторм</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>50</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>139</strong> каналов</a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>399</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет и ТВ за 530</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>60</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>123</strong> каналов</a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>530</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет, ТВ и роутер за 650</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>100</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>139</strong> каналов</a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text">Wi-Fi роутер в рамках пакета</span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>650</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет и ТВ за 630</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>70</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>123</strong> каналов</a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
+
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>630</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+			</table>
+
+			<!-- Таблица -->
+			<table class="table">
+				<caption>ДОМАШНИЙ ИНТЕРНЕТ</caption>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет и роутер за 550</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>100</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text">Wi-Fi роутер в рамках пакета</span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>550</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет за 250</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>10</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text">Wi-Fi-роутер Beeline Smartbox</span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>250</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет за 450</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>60</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text">Wi-Fi-роутер Beeline Smartbox</span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>450</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет за 530</a></h3>
+					</td>
+					<td class="cell" data-label="Скорость">
+						<span class="cell-text">до <strong>70</strong> Мбит/с</span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text">Wi-Fi-роутер Beeline Smartbox</span>
+
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>530</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+			</table>
+
+			<!-- Таблица -->
+			<table class="table">
+				<caption>Домашнее ТВ</caption>
+				<tr>
+					<td class="cell">
+						<h3 class="cell-title"><a href="#" class="cell-title__link">Базовый 2.0</a></h3>
+					</td>
+					<td class="cell  cell--tv" data-label="Скорость">
+						<span class="cell-text  cell-text--tv">Техническая поддержка линии<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
+					</td>
+					<td class="cell" data-label="Каналы">
+						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>139</strong> каналов</a></span>
+					</td>
+					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
+						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
+					</td>
+					<td class="cell" data-label="Цена">
+						<span class="cell-text"><strong>345</strong> ₽/месяц</span>
+					</td>
+					<td class="cell  cell--btn">
+						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</section>
 
-	<section class="section">
-		<h2 class="section-title"></h2>
-		<p class="section-text"></p>
+	<section class="about-tariffes">
+		<div class="section-inner  section-inner--about-tariffes">
+			<h2 class="section-title  section-title--about-tariffes">Про тарифы <br/>Всё</h2>
+			<p class="section-text"></p>
+		</div>
 	</section>
 
 	<section class="section">
