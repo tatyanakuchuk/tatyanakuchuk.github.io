@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Билайн</title>
 	<link href="css/style.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 		<div class="section-inner  section-inner--intro">
 			<div class="intro-top">
 				<!-- ЛОГОТИП -->
-				<img src="img/logo-beeline.png" alt="Билайн" class="logo" widtd="140px" height="40px">
+				<img src="img/logo-beeline.png" alt="Билайн" class="logo" width="140px" height="40px">
 				<!-- НАВИГАЦИЯ -->
 				<nav class="main-nav">
 					<!-- КНОПКА МЕНЮ -->
@@ -522,9 +522,53 @@
 					</tr>
 				</table>
 			</div>
-			<p class="section-text"></p>
 		</div>
 	</section>
 
+	<section class="question">
+		<div class="section-inner  section-inner--question">
+			<h2 class="section-title  section-title--question">Остались вопросы по тарифам? Мы подскажем!</h2>
+			<form class="request-form  request-form--question">
+				<div class="form-area">
+					<input name="name" type="text" class="name-input" placeholder="Ваше имя...">
+					<input name="phone" type="text" class="phone-input" placeholder="Введите номер..." required>
+					<input type="submit" class="request-form-btn" value="Жду звонка">
+				</div>
+				<div class="agreement-wrap">
+					<!-- <span class="confirm">Подтвердите соглаcие на обработку персональных данных!</span> -->
+					<div class="agree">
+						<input type="checkbox"  id="agree" checked  class="agree-checkbox">
+						<label for="agree" class="agree-label">Согласен на обработку персональных данных</label>
+					</div>
+				</div>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="email@mail.com">
+				<input type="hidden" name="form_subject" value="вопросы по тарифам">
+				<!-- END Hidden Required Fields -->
+			</form>
+		</div> <!--  end ФОРМА ЗАЯВКИ -->
+	</section>
+
+	<section class="furniture">
+		<div class="section-inner">
+			<h2 class="seсtion-title  seсtion-title--furniture">Оборудование для интернета и Цифрового ТВ</h2>
+			<div class="furniture-images">
+				<div class="furniture-img-area">
+					<div class="img-wrap">
+						<img src="../img/1.jpg" alt="Роутер" class="furniture-img">
+					</div>
+					<span class="furniture-disc">Роутер</span>
+				</div>
+				<div class="furniture-img-area">
+				<div class="img-wrap">
+					<img src="../img/2.jpg" alt="Приставка ТВ" class="furniture-img">
+				</div>
+				<span class="furniture-disc">Приставка ТВ</span>
+			</div>
+			</div>
+
+		</div>
+	</section>
 </body>
 </html>
