@@ -1117,7 +1117,11 @@ td {
   .about-tariffes {
     background-image: url(../img/family620.jpg); }
   .section-inner--about-tariffes {
-    min-height: 570px; } }
+    min-height: 570px; }
+  .table--all {
+    width: 80%; }
+    .table--all td::before {
+      text-align: left; } }
 
 @media (max-width: 480px) {
   .form-area {
@@ -1128,7 +1132,11 @@ td {
     margin-right: 0;
     margin-bottom: 10px; }
   .request-form-btn {
-    width: 100%; } }
+    width: 100%; }
+  .table--all {
+    width: 80%; }
+    .table--all td::before {
+      max-width: 135px; } }
 
 @media (max-width: 320px) {
   .intro-top {
@@ -1152,7 +1160,4 @@ td {
   .tooltip span {
     left: -160px; }
   .about-tariffes {
-    background-image: url(../img/family320.jpg); }
-  .table--all td::before {
-    width: 135px;
-    text-align: left; } }
+    background-image: url(../img/family320.jpg); } }
