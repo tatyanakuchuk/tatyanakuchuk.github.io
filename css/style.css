@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article,
 aside,
 details,
@@ -248,9 +249,6 @@ img {
   margin: 0;
   text-align: center;
   margin-bottom: 45px; }
-
-.section-text {
-  letter-spacing: 0.4px; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -890,6 +888,65 @@ td {
   .cell--all:nth-child(2) {
     min-height: 120px; }
 
+.question {
+  background: linear-gradient(to right, #e7ebec, #fff); }
+
+.section-inner--question {
+  padding-bottom: 10px; }
+
+.section-title--question {
+  margin-bottom: 10px; }
+
+.request-form--question .name-input {
+  width: 50%;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  border: 1px solid #c4c1c1;
+  box-sizing: border-box;
+  transition: all .3s ease; }
+  .request-form--question .name-input:hover {
+    border-color: #1A1A1A; }
+
+.request-form--question .phone-input {
+  border-radius: 50px; }
+
+.request-form--question .request-form-btn {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px; }
+
+.seсtion-title--furniture {
+  font-size: 33px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.furniture-images {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.furniture-img {
+  display: block;
+  width: 300px; }
+
+.img-wrap {
+  min-height: 220px; }
+
+.furniture-disc {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 auto; }
+
 @media (max-width: 1200px) {
   .intro-top {
     -ms-flex-wrap: wrap;
@@ -1121,7 +1178,19 @@ td {
   .table--all {
     width: 80%; }
     .table--all td::before {
-      text-align: left; } }
+      text-align: left; }
+  .request-form--question .form-area {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .request-form--question .phone-input,
+  .request-form--question .name-input,
+  .request-form--question .request-form-btn {
+    width: 100%;
+    margin-bottom: 10px; }
+  .furniture-img {
+    width: 200px; }
+  .img-wrap {
+    min-height: 150px; } }
 
 @media (max-width: 480px) {
   .form-area {
@@ -1136,7 +1205,17 @@ td {
   .table--all {
     width: 80%; }
     .table--all td::before {
-      max-width: 135px; } }
+      max-width: 135px; }
+  .furniture-images {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .furniture-img {
+    width: 280px;
+    margin: 0 auto; }
+  .furniture-img-area {
+    margin-bottom: 20px; }
+  .img-wrap {
+    min-height: auto; } }
 
 @media (max-width: 320px) {
   .intro-top {
