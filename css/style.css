@@ -717,10 +717,6 @@ caption {
   color: #8e898d;
   padding: 5px 15px; }
 
-tr {
-  display: row;
-  box-sizing: border-box; }
-
 td {
   width: 17%;
   font-weight: 500;
@@ -827,6 +823,73 @@ td {
   font-size: 46px;
   line-height: 4; }
 
+.tables {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.table--all {
+  width: 20%; }
+  .table--all tbody {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .table--all .cell-text {
+    display: block;
+    line-height: 1.4; }
+
+.table--labels {
+  width: 20%; }
+  .table--labels td {
+    text-align: left;
+    color: #999; }
+
+.table--hit {
+  background-color: #f3f1f1;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+  .table--hit .cell:first-child {
+    background: #fad485;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+.hit {
+  font-size: 16px;
+  font-weight: 600;
+  color: red; }
+
+.cell-text--no {
+  display: block;
+  background-color: #999;
+  margin: 0 auto;
+  width: 58px;
+  height: 1px;
+  margin-top: 20px; }
+
+.cell--all {
+  width: 100%;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 60px;
+  border: 0;
+  border-bottom: 1px solid #f3f1f1; }
+  .cell--all:last-child {
+    border-bottom: 0; }
+  .cell--all:first-child {
+    width: 100%;
+    text-align: center; }
+  .cell--all:nth-child(3) {
+    min-height: 90px; }
+  .cell--all:nth-child(2) {
+    min-height: 120px; }
+
 @media (max-width: 1200px) {
   .intro-top {
     -ms-flex-wrap: wrap;
@@ -894,6 +957,7 @@ td {
     margin-bottom: 20px;
     width: 365px; }
   td {
+    height: 45px;
     width: 100%;
     vertical-align: middle;
     border: 1px solid #b4b4b4;
@@ -903,12 +967,13 @@ td {
     padding: 10px 15px;
     padding-left: 40%; }
     td:first-child {
-      min-height: 65px;
+      min-height: 75px;
       width: 100%;
       text-align: center;
       padding-left: 15px; }
     td:last-child {
-      border-bottom: 1px solid #b4b4b4; }
+      border-bottom: 1px solid #b4b4b4;
+      min-height: 75px; }
     td::before {
       display: inline-block;
       vertical-align: middle;
@@ -927,7 +992,28 @@ td {
     left: -135px; }
   .about-tariffes {
     background-image: url(../img/family992.jpg);
-    background-position: center; } }
+    background-position: center; }
+  .tables {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .table--labels {
+    display: none; }
+  .table--all {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 300px;
+    border: 1px solid #f3f1f1;
+    margin-bottom: 10px; }
+    .table--all tr {
+      width: 100%; }
+    .table--all td {
+      width: 100%;
+      padding-left: 50%; }
+      .table--all td:first-child, .table--all td:last-child {
+        padding-left: 15px;
+        width: 100%; } }
 
 @media (max-width: 768px) {
   .intro-text-bottom {
@@ -1066,4 +1152,7 @@ td {
   .tooltip span {
     left: -160px; }
   .about-tariffes {
-    background-image: url(../img/family320.jpg); } }
+    background-image: url(../img/family320.jpg); }
+  .table--all td::before {
+    width: 135px;
+    text-align: left; } }
