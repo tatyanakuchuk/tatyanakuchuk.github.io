@@ -188,29 +188,34 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/Roboto-Light.woff2"), url("../../fonts/Roboto-Light.woff");
-  font-weight: 300;
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensans.woff2"), url("../../fonts/opensans.woff");
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/Roboto-Regular.woff2"), url("../../fonts/Roboto-Regular.woff");
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensansbold.woff2"), url("../../fonts/opensansbold.woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensanslight.woff2"), url("../../fonts/opensanslight.woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/Roboto-Bold.woff2"), url("../../fonts/Roboto-Bold.woff");
-  font-weight: 700;
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensans-semibold.woff2"), url("../../fonts/opensans-semibold.woff");
+  font-weight: 600;
   font-style: normal; }
 
 body {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24px;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  color: #5a5a5a; }
+  font-family: 'Open Sans', 'Arial', sans-serif; }
 
 img {
   max-width: 100%;
@@ -223,8 +228,8 @@ img {
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   @media (min-width: 768px) {
     .section-inner {
       min-width: 660px; } }
@@ -236,11 +241,13 @@ img {
       width: 1200px; } }
 
 .section-title {
-  font-size: 32px;
+  font-size: 33px;
   line-height: 36px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.6px;
-  margin: 0; }
+  margin: 0;
+  text-align: center;
+  margin-bottom: 45px; }
 
 .section-text {
   letter-spacing: 0.4px; }
@@ -266,7 +273,8 @@ img {
   color: #fff;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 5px 10px #858585; }
   .intro:before {
     content: '';
     display: block;
@@ -279,7 +287,7 @@ img {
 
 .section-inner--intro {
   position: relative;
-  padding-bottom: 40px; }
+  padding-bottom: 100px; }
 
 .intro-top {
   display: -ms-flexbox;
@@ -298,17 +306,14 @@ img {
 .phone-block {
   padding-top: 5px; }
 
-.phone-connect {
-  margin-bottom: 15px; }
-
 .phone-connect-text,
 .phone-connect-number,
 .phone-support-text,
 .phone-support-number {
   display: block;
-  text-align: right;
-  font-weight: 400;
-  font-size: 16px; }
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1; }
 
 .phone-connect-text,
 .phone-support-text {
@@ -316,11 +321,19 @@ img {
 
 .phone-connect-number,
 .phone-support-number {
-  font-size: 22px;
-  font-weight: 600; }
+  font-size: 21px;
+  font-weight: 500;
+  color: #fcdb2a;
+  text-decoration: none;
+  transition: all .3s ease; }
+  .phone-connect-number:hover,
+  .phone-support-number:hover {
+    transition: all .3s ease;
+    color: #1eb3d9;
+    text-decoration: underline; }
 
 .page-title {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 300;
   line-height: 1.3;
   margin: 0;
@@ -328,7 +341,7 @@ img {
   width: 52%; }
 
 .intro-text {
-  margin-bottom: 65px; }
+  margin-bottom: 30px; }
 
 .intro-text-top {
   display: block;
@@ -359,11 +372,41 @@ img {
     box-sizing: border-box; }
 
 .intro-text-bottom {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.3; }
 
 .main-nav {
   width: 70%; }
+
+.toggle-text {
+  position: relative;
+  padding-right: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease; }
+  .toggle-text::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    transition: all .3s ease; }
+
+.main-nav-toggle {
+  display: none;
+  transition: all .3s ease; }
+  .main-nav-toggle:hover .toggle-text {
+    color: #fcdb2a; }
+    .main-nav-toggle:hover .toggle-text::after {
+      background-image: url(../img/menu-2.png); }
 
 .nav-list {
   margin: 0;
@@ -380,70 +423,75 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
+  display: block;
+  width: 110px;
   position: absolute;
-  width: 150px; }
+  padding-top: 95px;
+  transition: all .3s ease; }
 
-.submenu-item:first-child .submenu-item__link {
-  border-top: 1px solid #fcdb2a; }
-
-.submenu-item:hover .submenu-item__link {
-  text-decoration: underline; }
-
-.submenu-item:first-child .submenu-item__link {
-  border-top: 1px solid #fcdb2a; }
+.submenu-item {
+  padding-bottom: 10px; }
 
 .submenu-item__link {
   display: block;
+  position: relative;
   text-decoration: none;
   color: #fff;
-  padding: 5px 15px;
+  padding: 5px;
   font-size: 16px;
   font-weight: 300;
-  border-bottom: 1px solid #fcdb2a;
-  border-left: 1px solid #fcdb2a;
-  border-right: 1px solid #fcdb2a;
-  background-color: rgba(252, 219, 42, 0.4); }
-
-.nav-item:hover .nav-item__link {
-  border: 1px solid #fcdb2a; }
-
-.nav-item--tariffes {
-  position: relative; }
-  .nav-item--tariffes:hover .submenu-list {
-    display: block; }
-  .nav-item--tariffes:hover .nav-item__link--tariffes {
-    border-bottom: 0; }
-  .nav-item--tariffes::after {
+  transition: all .3s ease; }
+  .submenu-item__link::after {
+    transition: all .3s ease;
     content: '';
     position: absolute;
-    right: 15px;
-    top: 16px;
     display: block;
-    border: 5px solid transparent;
-    border-top: 5px solid rgba(250, 250, 250, 0.6); }
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fcdb2a; }
 
 .nav-item__link {
-  display: block;
-  padding: 5px 15px;
-  font-weight: 400;
+  position: relative;
+  padding-bottom: 6px;
+  transition: all .3s ease; }
+  .nav-item__link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fcdb2a;
+    opacity: 0;
+    transition: all .3s ease; }
+
+.nav-item {
+  padding: 5px;
+  transition: all .3s ease; }
+  .nav-item:hover .nav-item__link::after {
+    opacity: 1; }
+
+.nav-item--tariffes {
+  position: relative;
+  transition: all .3s ease; }
+  .nav-item--tariffes:hover .submenu-list {
+    display: block; }
+  .nav-item--tariffes:hover .submenu-item {
+    transition: all .3s ease; }
+    .nav-item--tariffes:hover .submenu-item:hover .submenu-item__link::after {
+      opacity: 1; }
+
+.nav-item__link {
+  font-weight: 500;
   font-size: 16px;
   text-decoration: none;
   color: #fff;
-  border: 1px solid transparent; }
-  .nav-item__link--tariffes {
-    padding-right: 30px;
-    border-bottom: 0; }
-
-.nav-item--search-city {
-  padding: 5px 15px; }
-  .nav-item--search-city:hover .nav-item__link--search-city {
-    border: 1px solid transparent;
-    border-bottom: 1px dashed #fff; }
-
-.nav-item__link--search-city {
-  padding: 0;
-  border-bottom: 1px dashed #fff; }
+  transition: all .3s ease; }
 
 .forms-block {
   display: -ms-flexbox;
@@ -467,13 +515,17 @@ img {
 .request-text {
   display: block;
   text-transform: uppercase;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px; }
+
+.agree-label {
+  font-size: 14px; }
 
 .our-manager {
   display: block;
   margin-bottom: 20px;
-  font-size: 16px; }
+  font-size: 15px; }
 
 .form-area {
   display: -ms-flexbox;
@@ -487,11 +539,14 @@ img {
 .phone-input {
   width: 50%;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 15px;
   border-radius: 3px;
   border: 1px solid #c4c1c1;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .3s ease; }
+  .phone-input:hover {
+    border-color: #1A1A1A; }
 
 .request-form-btn {
   width: 50%;
@@ -499,17 +554,18 @@ img {
   border: none;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 5px;
   border-radius: 3px;
-  border: 1px solid #c4c1c1;
+  transition: all .3s ease;
   box-sizing: border-box; }
   .request-form-btn:hover {
-    background-color: #e9c60d; }
+    background-color: #FFE355;
+    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.23); }
 
 .anti-spam {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 20px; }
 
 .agree-link {
@@ -572,6 +628,205 @@ img {
   box-sizing: border-box;
   border: 1px solid #c4c1c1; }
 
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 10px; }
+
+.features-blocks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.features-block {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.features-block-header {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 35px; }
+
+.features-item {
+  display: block;
+  padding-left: 45px;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 18px; }
+  .features-item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/icon-mark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 0; }
+
+.btn-to-connect {
+  display: block;
+  width: 240px;
+  height: 65px;
+  border: 0;
+  padding: 0;
+  border-radius: 50px;
+  color: #000;
+  font-weight: 600;
+  background: #fad485;
+  box-shadow: 0 3px 0 0 #ebb16f, 0 4px 0 0 #d99a59, 0 4px 8px 0 rgba(102, 55, 0, 0.4);
+  border-bottom: 4px solid #d2a971;
+  transition: all .3s ease;
+  outline: none; }
+  .btn-to-connect:hover {
+    background-image: linear-gradient(180deg, #fbcd6f, #f6c165); }
+  .btn-to-connect:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 0 #ebb16f, 0 2px 0 0 #d99a59, 0 2px 4px 0 rgba(102, 55, 0, 0.4); }
+
+.section-title--tariffes {
+  font-size: 46px; }
+
+.tariffes {
+  background-color: #f3f3f3; }
+
+table {
+  width: 100%;
+  margin-bottom: 20px; }
+  table:last-child {
+    margin-bottom: 0; }
+  table strong {
+    font-size: 22px;
+    font-weight: 600; }
+
+caption {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #8e898d;
+  padding: 5px 15px; }
+
+tr {
+  display: row;
+  box-sizing: border-box; }
+
+td {
+  width: 17%;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: top;
+  padding: 15px;
+  box-sizing: border-box;
+  line-height: 1.2; }
+  td:first-child {
+    width: 260px;
+    text-align: left; }
+
+.cell--wi-fi {
+  width: 10%;
+  font-size: 14px;
+  text-align: left; }
+
+.cell--btn {
+  text-align: center; }
+
+.cell-title {
+  vertical-align: top;
+  line-height: 1.3;
+  margin: 0; }
+
+.cell-title__link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #5a5a5a;
+  transition: all .3s ease;
+  font-weight: 500; }
+  .cell-title__link:hover {
+    color: #e09a20;
+    border-bottom: 1px solid #e09a20; }
+
+.cell-text--no-wi-fi,
+.cell-text--no-channels {
+  color: #787878;
+  font-size: 16px; }
+
+.cell--tv {
+  text-align: left; }
+
+.cell-text--tv {
+  font-size: 16px; }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/help.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .tooltip span {
+    position: absolute;
+    top: -115px;
+    left: -85px;
+    display: none;
+    width: 200px;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.4;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition: all .3s ease; }
+  .tooltip:hover span {
+    display: block; }
+
+.cell-text__link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dashed #5a5a5a;
+  transition: all .3s ease; }
+  .cell-text__link:hover {
+    color: #e09a20;
+    border-bottom: 1px dashed #e09a20; }
+
+.btn-to-connect--table {
+  width: 140px;
+  height: 45px;
+  font-size: 14px;
+  margin: 0 auto; }
+
+.about-tariffes {
+  background-color: #d2cdc9;
+  background-image: url(../img/family2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  min-height: 700px; }
+
+.section-inner--about-tariffes {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 700px; }
+
+.section-title--about-tariffes {
+  text-align: left;
+  font-size: 46px;
+  line-height: 4; }
+
 @media (max-width: 1200px) {
   .intro-top {
     -ms-flex-wrap: wrap;
@@ -587,10 +842,26 @@ img {
         order: 2;
     width: 100%;
     border-top: 1px solid rgba(250, 250, 250, 0.4);
-    padding-top: 15px; }
+    padding-top: 15px;
+    margin-top: 15px;
+    position: relative; }
+  .main-nav-toggle {
+    display: block;
+    text-align: right; }
   .nav-list {
+    display: none;
+    width: 180px;
+    padding: 15px;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 10; }
+  .nav-item__link {
+    color: #000; }
   .phone-block {
     padding-top: 0;
     -ms-flex-order: 1;
@@ -603,15 +874,60 @@ img {
     -ms-flex-pack: end;
         justify-content: flex-end; }
   .phone-connect {
-    margin-right: 40px; }
-  .phone-connect-text,
-  .phone-support-text {
-    text-align: right; } }
+    margin-right: 40px; } }
 
 @media (max-width: 992px) {
   .page-title {
     width: 100%;
-    max-width: 580px; } }
+    max-width: 580px; }
+  tbody {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  tr {
+    display: block;
+    margin-bottom: 20px;
+    width: 365px; }
+  td {
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid #b4b4b4;
+    border-bottom: 0;
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    padding-left: 40%; }
+    td:first-child {
+      min-height: 65px;
+      width: 100%;
+      text-align: center;
+      padding-left: 15px; }
+    td:last-child {
+      border-bottom: 1px solid #b4b4b4; }
+    td::before {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      line-height: 24px;
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      padding-left: 15px; }
+  .cell--btn {
+    padding-left: 15px; }
+  .cell--wi-fi {
+    width: 100%;
+    text-align: center; }
+  .tooltip span {
+    left: -135px; }
+  .about-tariffes {
+    background-image: url(../img/family992.jpg);
+    background-position: center; } }
 
 @media (max-width: 768px) {
   .intro-text-bottom {
@@ -635,14 +951,31 @@ img {
     margin-left: -140px; }
   .request {
     margin: 0 auto;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .features-blocks {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .features-block {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+    width: 100%; }
+    .features-block:last-child {
+      margin-bottom: 0; }
+  .features-block-header {
+    text-align: center;
+    width: 100%; }
+  tr {
+    width: 100%; } }
 
 @media (max-width: 620px) {
   .intro-top {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    margin-bottom: 20px; }
   .logo {
     margin-bottom: 15px; }
   .phone-block {
@@ -654,35 +987,24 @@ img {
     margin-bottom: 5px; }
   .phone-connect,
   .phone-support {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
     margin-right: 0;
     -ms-flex-item-align: center;
-        align-self: center; }
-  .phone-connect-text,
-  .phone-support-text {
-    margin-right: 15px; }
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center; }
   .main-nav {
-    border-top: 1px solid #fcdb2a;
-    padding-top: 0; }
+    margin-top: 5px; }
+  .main-nav-toggle {
+    text-align: center; }
   .nav-list {
-    -ms-flex-direction: column;
-        flex-direction: column; }
+    right: auto;
+    left: 50%;
+    margin-left: -90px;
+    top: 40px; }
   .nav-item {
-    background-color: rgba(252, 219, 42, 0.4);
-    text-align: center;
-    border-bottom: 1px solid #fcdb2a; }
-    .nav-item:hover .nav-item__link {
-      border: 1px solid transparent;
-      background-color: rgba(252, 219, 42, 0.4); }
+    text-align: center; }
     .nav-item--search-city {
       padding: 0; }
-      .nav-item--search-city:hover .nav-item__link--search-city {
-        background-color: transparent;
-        border-bottom: 1px solid transparent;
-        background-color: rgba(252, 219, 42, 0.4); }
   .nav-item__link--search-city {
     padding: 5px 15px;
     border-bottom: 1px solid transparent; }
@@ -705,7 +1027,11 @@ img {
   .submenu-item__link {
     border: 1px solid transparent;
     border-bottom: 1px solid #fcdb2a;
-    background-color: transparent; } }
+    background-color: transparent; }
+  .about-tariffes {
+    background-image: url(../img/family620.jpg); }
+  .section-inner--about-tariffes {
+    min-height: 570px; } }
 
 @media (max-width: 480px) {
   .form-area {
@@ -726,8 +1052,18 @@ img {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+  .page-title,
+  .intro-text-bottom {
+    font-size: 31px; }
+  .intro-text-top {
+    width: 160px;
+    font-size: 16px; }
   .request-form {
     padding: 20px; }
   .phone-connect-number,
   .phone-support-number {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .tooltip span {
+    left: -160px; }
+  .about-tariffes {
+    background-image: url(../img/family320.jpg); } }
