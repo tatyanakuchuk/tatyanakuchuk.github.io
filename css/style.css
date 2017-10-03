@@ -1463,6 +1463,8 @@ img {
     min-height: 170px; }
   .small-banner-row-text {
     padding-top: 22px; }
+  .small-banner:first-child {
+    margin-right: 0; }
   .products-tabs-header {
     -ms-flex-direction: column;
         flex-direction: column;
