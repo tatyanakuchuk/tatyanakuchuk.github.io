@@ -365,11 +365,27 @@ img {
   font-size: 28px;
   font-weight: 800; }
 
-.cart-block {
+.intro-btn-order {
+  position: relative;
+  width: 100%;
   width: 225px;
-  height: 68px;
-  position: relative; }
-  .cart-block::before {
+  border: 0;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  background-color: #8ca93e;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border-radius: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 700;
+  transition: all .3s ease; }
+  .intro-btn-order:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); }
+  .intro-btn-order::before {
     position: absolute;
     content: '';
     top: 50%;
@@ -381,7 +397,7 @@ img {
     background-image: url(../img/scooter.png);
     background-position: center;
     background-repeat: no-repeat; }
-  .cart-block::after {
+  .intro-btn-order::after {
     position: absolute;
     content: '';
     top: 51px;
@@ -393,26 +409,6 @@ img {
     background-image: url(../img/line.png);
     background-position: center;
     background-repeat: no-repeat; }
-
-.intro-btn-order {
-  width: 100%;
-  width: 225px;
-  border: 0;
-  padding: 0;
-  padding-left: 25px;
-  padding-right: 25px;
-  box-sizing: border-box;
-  background-color: #8ca93e;
-  padding-top: 18px;
-  padding-bottom: 22px;
-  border-radius: 35px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-  font-weight: 700;
-  transition: all .3s ease; }
-  .intro-btn-order:hover {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2); }
 
 .intro-img {
   display: block;
