@@ -308,7 +308,8 @@ img {
   min-height: 880px; }
 
 .section-inner--intro {
-  padding-top: 45px; }
+  padding-top: 45px;
+  padding-bottom: 20px; }
 
 .intro-top {
   display: -ms-flexbox;
@@ -327,7 +328,8 @@ img {
   display: block;
   width: 200px;
   height: 55px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  min-width: 290px; }
 
 .phone-text {
   color: #ffae00;
@@ -392,35 +394,25 @@ img {
     background-position: center;
     background-repeat: no-repeat; }
 
-.cart-input {
+.intro-btn-order {
   width: 100%;
   width: 225px;
   border: 0;
   padding: 0;
-  padding-left: 60px;
+  padding-left: 25px;
   padding-right: 25px;
   box-sizing: border-box;
   background-color: #8ca93e;
-  padding-top: 20px;
-  padding-bottom: 24px;
+  padding-top: 18px;
+  padding-bottom: 22px;
   border-radius: 35px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
-  color: #fff; }
-
-::-webkit-input-placeholder {
-  color: #fff; }
-
-::-moz-placeholder {
-  color: #fff; }
-
-/* Firefox 19+ */
-:-moz-placeholder {
-  color: #fff; }
-
-/* Firefox 18- */
-:-ms-input-placeholder {
-  color: #fff; }
+  color: #fff;
+  font-weight: 700;
+  transition: all .3s ease; }
+  .intro-btn-order:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2); }
 
 .intro-img {
   display: block;
@@ -1323,6 +1315,13 @@ img {
     padding-right: 5px; } }
 
 @media (max-width: 620px) {
+  .intro-top {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .main-nav {
+    margin-bottom: 15px; }
   .products-cards {
     display: -ms-flexbox;
     display: flex;
@@ -1398,6 +1397,10 @@ img {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
+  .submenu-list {
+    min-width: 290px; }
+  .submenu-item {
+    width: 50%; }
   .main-banner {
     margin-bottom: 20px; }
   .small-banner-row-text {
@@ -1441,8 +1444,6 @@ img {
     margin-bottom: 20px; }
   .phone-block {
     margin-bottom: 20px; }
-  .submenu-item {
-    width: 50%; }
   .cart-block {
     margin-bottom: 20px; }
   .small-banner {
