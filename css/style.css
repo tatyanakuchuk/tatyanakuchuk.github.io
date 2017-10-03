@@ -326,10 +326,10 @@ img {
 
 .logo {
   display: block;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 55px;
-  margin-bottom: 35px;
-  min-width: 290px; }
+  margin-bottom: 35px; }
 
 .phone-text {
   color: #ffae00;
