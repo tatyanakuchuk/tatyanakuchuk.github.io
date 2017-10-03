@@ -4,593 +4,303 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Билайн</title>
+	<title>Pizzaro</title>
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
+	<h1 class="visually-hidden">Pizzaro</h1>
 	<!-- ПЕРВЫЙ ЭКРАН -->
 	<section class="intro">
 		<div class="section-inner  section-inner--intro">
 			<div class="intro-top">
-				<!-- ЛОГОТИП -->
-				<img src="img/logo-beeline.png" alt="Билайн" class="logo" width="140px" height="40px">
-				<!-- НАВИГАЦИЯ -->
+				<div class="logo-wrap">
+				<img src="img/logo-pizzaro.png" alt="Pizzaro" class="logo" width="200px" height="55px">
+				</div>
 				<nav class="main-nav">
-					<!-- КНОПКА МЕНЮ -->
-					<div class="main-nav-toggle">
-						<span class="toggle-text">Меню</span>
+					<div class="menu-toggle">
+						<button class="menu-toggle-btn">Menu</button>
 					</div>
 					<ul class="nav-list">
-						<li class="nav-item  nav-item--search-city">
-							<a href="#" class="nav-item__link  nav-item__link--search-city">Москва<span>Выберите город</span></a>
+						<li class="nav-item  nav-item--active">
+							<a href="#" class="nav-item__link">Order Online</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-item__link">Спецтариф</a>
+							<a href="#" class="nav-item__link">About</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-item__link">Тарифы</a>
+							<a href="#" class="nav-item__link">News</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-item__link">Тариф "Всё"</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link">Тариф "3 в 1"</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link">Оборудование</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link">Подключить</a>
+							<a href="#" class="nav-item__link">Store locator</a>
 						</li>
 					</ul>
 				</nav>
-				<!-- ТЕЛЕФОНЫ -->
 				<div class="phone-block">
-					<div class="phone-connect">
-						<span class="phone-connect-text">Отдел подключения</span>
-						<a class="phone-connect-number" href="tel:+89056605550">8 905 660 55 50</a>
-					</div>
-					<div class="phone-support">
-						<span class="phone-support-text">Техническая поддержка</span>
-						<a class="phone-support-number" href="tel:+89056605550">8 800 700 80 00</a>
-					</div>
+					<span class="phone-text">Call and Order in <span class="city">London</span></span>
+					<span class="phone-number">54 548 779 654</span>
 				</div>
-			</div> <!-- end of  .intro-top-->
-
+				<div class="cart-block">
+					<input type="text" class="cart-input" placeholder="Your Order is Empty">
+				</div>
+			</div>
 			<div class="intro-bottom">
-				<h1 class="page-title">Беспроводной интернет Билайн</h1>
-				<div class="intro-text">
-					<span class="intro-text-top">Скорость 100 Мбит/с</span>
-					<span class="intro-text-bottom">тариф <strong>Супер Промо 100 Мбит</strong> - 450 р/месяц</span>
-				</div>
-				<!-- ФОРМА ЗАЯВКИ -->
-				<div class="forms-block">
-				<div class="request">
-					<form class="request-form">
-						<span class="request-text">Оставьте заявку <br/>на бесплатное подключение</span>
-						<span class="our-manager">Перезвоним в рабочее время</span>
-						<div class="form-area">
-							<input name="phone" type="text" class="phone-input" placeholder="Введите номер..." required>
-							<input type="submit" class="request-form-btn" value="Оставить заявку">
-						</div>
-						<span class="anti-spam">Пожалуйста, введите номер на который мы сможем дозвониться.</span>
-						<div class="agreement-wrap">
-							<!-- <span class="confirm">Подтвердите соглаcие на обработку персональных данных!</span> -->
-							<div class="agree">
-								<input type="checkbox"  id="agree" checked  class="agree-checkbox">
-								<label for="agree" class="agree-label">Согласен на обработку персональных данных</label>
-							</div>
-						</div>
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Site Name">
-						<input type="hidden" name="admin_email" value="email@mail.com">
-						<input type="hidden" name="form_subject" value="тариф Супер промо">
-						<!-- END Hidden Required Fields -->
-					</form>
-				</div> <!--  end ФОРМА ЗАЯВКИ -->
+				<ul class="submenu-list">
+					<li class="submenu-item  submenu-item--active">
+						<a href="#" class="submenu-item-link  submenu-item-link--pizza">Pizza</a>
+					</li>
+					<li class="submenu-item">
+						<a href="#" class="submenu-item-link  submenu-item-link--burgers">Burgers</a>
+					</li>
+					<li class="submenu-item  submenu-item--salads">
+						<a href="#" class="submenu-item-link  submenu-item-link--salads">Salads</a>
+					</li>
+					<li class="submenu-item">
+						<a href="#" class="submenu-item-link  submenu-item-link--tacos">Tacos</a>
+					</li>
+					<li class="submenu-item">
+						<a href="#" class="submenu-item-link  submenu-item-link--wraps">Wraps</a>
+					</li>
+					<li class="submenu-item">
+						<a href="#" class="submenu-item-link  submenu-item-link--fries">Fries</a>
+					</li>
+					<li class="submenu-item  submenu-item--salads">
+						<a href="#" class="submenu-item-link  submenu-item-link--salads">Salads</a>
+					</li>
+					<li class="submenu-item">
+						<a href="#" class="submenu-item-link  submenu-item-link--drinks">Drinks</a>
+					</li>
+				</ul>
 
-				<!-- ФОРМА НАПИСАТЬ СООБЩЕНИЕ -->
-				<div class="message">
-					<div class="message-form-header">
-						<!-- <img src="#" alt="Beeline" class="message-form-photo" widtd="36px" height="36px"> -->
-						<span class="message-text">Задайте Ваш вопрос!</span>
-					</div>
-					<form class="message-form">
-						<div class="message-form-area">
-							<input name="name" type="text" class="message-control" placeholder="Ваше имя...">
-							<input name="phone" type="text" class="message-control" placeholder="Ваш телефон..." required>
-							<input type="email" name="email" class="message-control" placeholder="Обратный E-mail" required>
-							<textarea class="message-control-text" name="message" rows="5" cols="20" placeholder="Введите Ваше сообщение и нажмите кнопку &#8243;Отправить&#8243;"></textarea>
-							<input type="submit" class="message-form-btn" value="Отправить">
-						</div>
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Site Name">
-						<input type="hidden" name="admin_email" value="email@mail.com">
-						<input type="hidden" name="form_subject" value="тариф Супер промо">
-						<!-- END Hidden Required Fields -->
-					</form>
+				<div class="intro-new">
+					<img src="../img/new.png" alt="" class="intro-img">
 				</div>
-
-			</div> <!-- end intro-bottom-->
+			</div>
 		</div>
 	</section>
-	<!-- end ПЕРВЫЙ ЭКРАН -->
+	<!-- end of ПЕРВЫЙ ЭКРАН -->
 
 	<!-- ВТОРОЙ ЭКРАН -->
+	<section class="banners">
+		<h2 class="section-title  visually-hidden"></h2>
+		<div class="section-inner  section-inner--banners">
+
+			<div class="banners-block">
+				<div class="main-banner">
+					<div class="main-banner-text">
+						<div class="main-banner-text-top">
+							<h2 class="banner-title">
+								<span class="banner-title-top">Grilled Chicken</span>
+								<span class="banner-title-bottom">Summer Pizza</span>
+							</h2>
+							<span class="banner-mark">hot & spicy</span>
+						</div>
+							<span class="banner-note">*only in local</span>
+					</div>
+					<img class="main-banner-photo" src="http://via.placeholder.com/570x442" alt="Grilled Chicken" width="570px" height="442px">
+				</div>
+				<div class="small-banners">
+					<div class="small-banner">
+						<div class="small-banner-text">
+							<div class="small-banner-text-top">
+								<h2 class="small-banner-title">
+									<span class="small-banner-title-top">Free</span>
+									<span class="small-banner-title-bottom">Fries</span>
+								</h2>
+								<span class="banner-note  banner-note--fries">for online orders in <span class="banner-note-underline">wendsdays</span></span>
+							</div>
+						</div>
+						<img class="small-banner-photo" src="http://via.placeholder.com/270x210" alt="Free Fries" width="270px" height="210px">
+					</div>
+					<div class="small-banner">
+						<div class="small-banner-text">
+							<div class="small-banner-text-top">
+								<h2 class="small-banner-title">
+									<span class="small-banner-title-top">Iced</span>
+									<span class="small-banner-title-bottom">Coffee</span>
+								</h2>
+								<span class="small-banner-note">*only in local</span>
+							</div>
+						</div>
+						<img class="small-banner-photo" src="http://via.placeholder.com/270x210" alt="Iced Coffee" width="270px" height="210px">
+					</div>
+					<div class="small-banner-row">
+						<div class="small-banner-row-text">
+
+								<span class="small-banner-row-text-top  small-banner-text-top--">Order</span>
+								<span class="small-banner-row-text-bottom  small-banner-text-bottom--row">Online</span>
+
+						</div>
+						<img class="small-banner-row-photo" src="http://via.placeholder.com/570x210" alt="Order Online" width="570px" height="210px">
+					</div>
+				</div>
+			</div>
+
+			<div class="products-tabs">
+				<div class="products-tabs-header">
+					<div class="products-tabs-header-btn">
+						<a href="#" class="products-tabs-header-link">Wraps</a>
+					</div>
+					<div class="products-tabs-header-btn  products-tabs-header-btn--active">
+						<a href="#" class="products-tabs-header-link">Pizza Sets</a>
+					</div>
+					<div class="products-tabs-header-btn">
+						<a href="#" class="products-tabs-header-link">Burgers</a>
+					</div>
+				</div>
+				<div class="products-cards">
+
+					<div class="product-card">
+						<img src="http://via.placeholder.com/360x320" alt="Supreme Pizza"  class="product-card-photo">
+						<div class="product-card-info">
+							<h3 class="product-card-title">Supreme Pizza</h3>
+							<p class="product-card-text">Ricotta, sun dried tomatoes, garlic, mozzarella cheese, topped with lightly drizzled red sauce, pesto, and fresh basil</p>
+							<div class="pick-size">
+								<span class="pick-size-header">
+									<span class="pick-size-header-text">Pick Size</span>
+								</span>
+								<div class="product-price-picker">
+									<div class="product-card-price">
+										<button class="btn-pick-size"><strong>22</strong> cm</button>
+										<span class="product-card-price-text"><sup>$</sup>19.90</span>
+									</div>
+									<div class="product-card-price">
+										<button class="btn-pick-size"><strong>29</strong> cm</button>
+										<span class="product-card-price-text"><sup>$</sup>25.90</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-card  product-card--active">
+						<img src="http://via.placeholder.com/360x320" alt="Supreme Pizza"  class="product-card-photo">
+						<div class="product-card-info">
+							<h3 class="product-card-title">Supreme Pizza</h3>
+							<p class="product-card-text">Ricotta, sun dried tomatoes, garlic, mozzarella cheese, topped with lightly drizzled red sauce, pesto, and fresh basil</p>
+							<div class="pick-size">
+								<span class="pick-size-header">
+									<span class="pick-size-header-text">Pick Size</span>
+								</span>
+								<div class="product-price-picker">
+									<div class="product-card-price">
+										<button class="btn-pick-size  btn-pick-size--active"><strong>22</strong> cm</button>
+										<span class="product-card-price-text"><sup>$</sup>19.90</span>
+									</div>
+									<div class="product-card-price">
+										<button class="btn-pick-size"><strong>29</strong> cm</button>
+										<span class="product-card-price-text"><sup>$</sup>25.90</span>
+									</div>
+								</div>
+							</div>
+							<button class="btn-add-to-cart">Add to Cart</button>
+						</div>
+
+					</div>
+
+					<div class="product-card">
+						<img src="http://via.placeholder.com/360x320" alt="Supreme Pizza"  class="product-card-photo">
+						<div class="product-card-info">
+							<h3 class="product-card-title">Supreme Pizza</h3>
+							<p class="product-card-text">Ricotta, sun dried tomatoes, garlic, mozzarella cheese, topped with lightly drizzled red sauce, pesto, and fresh basil</p>
+							<div class="pick-size">
+								<span class="pick-size-header">
+									<span class="pick-size-header-text">Pick Size</span>
+								</span>
+								<div class="product-price-picker">
+									<div class="product-card-price">
+										<button class="btn-pick-size"><strong>22</strong> cm</button>
+										<span class="product-card-price-text"><sup>$</sup>19.90</span>
+									</div>
+									<div class="product-card-price">
+										<button class="btn-pick-size"><strong>29</strong> cm</button>
+										<span class="product-card-price-text"><sup>$</sup>25.90</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end of ВТОРОЙ ЭКРАН -->
+
+	<section class="deal">
+		<h2 class="section-title  visually-hidden">Deal of the day</h2>
+		<div class="section-inner  section-inner--deal">
+			<div class="deal-content">
+				<span class="free-delivery">FREE DELIVERY WITH</span>
+				<span class="product">piZZA OF THE DAY</span>
+				<div class="price-block">
+					<div class="product-price-wrap">
+						<span class="product-price"><sup class="sup-light">$</sup>9<sup class="sup-number">99</sup></span>
+					</div>
+					<div class="products">
+						<span class="product-name">- VEGGE LOVER</span>
+						<span class="product-name">- HAWAII</span>
+						<span class="product-name">- SUPREME</span>
+					</div>
+				</div>
+
+
+				<button class="btn-order">Order Now</button>
+			</div>
+
+		</div>
+	</section>
+
 	<section class="features">
-		<div class="section-inner">
-			<h2 class="section-title">Каким интернетом Вы хотите пользоваться?</h2>
-			<div class="features-blocks">
-			<div class="features-block">
-				<span class="features-block-header">Тарифный план "Супер 100"</span>
-				<img src="../img/moto.jpg" alt="картинка" width="400" height="400">
+		<h2 class="section-title"></h2>
+		<div class="section-inner  section-inner--features">
+
+			<ul class="features-list">
+				<li class="features-item  features-item--quality">
+					<h3 class="features-title">Best Quality</h3>
+					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
+				</li>
+				<li class="features-item  features-item--time">
+					<h3 class="features-title">On Time</h3>
+					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
+				</li>
+				<li class="features-item  features-item--master">
+					<h3 class="features-title">MasterChefs</h3>
+					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
+				</li>
+				<li class="features-item  features-item--food">
+					<h3 class="features-title">Taste Food</h3>
+					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<footer class="footer-page">
+		<div class="section-inner  section-inner--footer">
+			<div class="socials">
+				<a href="#" class="social social--fb">facebook</a>
+				<a href="#" class="social social--tw">twitter</a>
+				<a href="#" class="social social--inst">instagram</a>
+				<a href="#" class="social social--ytb">youtube</a>
+				<a href="#" class="social social--email">email</a>
 			</div>
-			<div class="features-block">
-				<span class="features-block-header">Интернет должен быть:</span>
-				<ul class="features-list">
-					<li class="features-item">Безлимитный</li>
-					<li class="features-item">по Wi-Fi или проводной</li>
-					<li class="features-item">Стабильный</li>
-					<li class="features-item">Скоростной</li>
-					<li class="features-item">Недорогой</li>
-				</ul>
-				<button class="btn-to-connect  btn-to-connect--features">Подключить</button>
+			<div class="logo-footer">
+				<img src="img/logo-pizzaro.png" alt="Pizzaro" class="logo" width="200px" height="55px">
 			</div>
+			<div class="contacts">
+				<span class="contact">Pizzaro Restaurant</span>
+				<span class="contact">901-947 South Drive, Houston, TX 77057, USA</span>
+				<span class="contact">Telephone: +1 555 1234</span>
+				<span class="contact">Fax: +1 555 4444</span>
 			</div>
-		</div>
-	</section>
-	<!-- end ВТОРОЙ ЭКРАН -->
-
-	<section class="tariffes">
-		<div class="section-inner">
-			<h2 class="section-title  section-title--tariffes">Тарифы</h2>
-
-			<!-- Таблица -->
-			<table class="table">
-				<caption>ДОМАШНИЙ ИНТЕРНЕТ И ТВ</caption>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Шторм</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>50</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>139</strong> каналов</a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>399</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет и ТВ за 530</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>60</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>123</strong> каналов</a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>530</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет, ТВ и роутер за 650</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>100</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>139</strong> каналов</a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text">Wi-Fi роутер в рамках пакета</span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>650</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет и ТВ за 630</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>70</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>123</strong> каналов</a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
-
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>630</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-			</table>
-
-			<!-- Таблица -->
-			<table class="table">
-				<caption>ДОМАШНИЙ ИНТЕРНЕТ</caption>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет и роутер за 550</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>100</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text">Wi-Fi роутер в рамках пакета</span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>550</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет за 250</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>10</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text">Wi-Fi-роутер Beeline Smartbox</span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>250</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет за 450</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>60</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text">Wi-Fi-роутер Beeline Smartbox</span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>450</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Домашний интернет за 530</a></h3>
-					</td>
-					<td class="cell" data-label="Скорость">
-						<span class="cell-text">до <strong>70</strong> Мбит/с</span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels  cell-text--no-channels">без TB<a class="tooltip"><span>Услуга ТВ может быть подключена дополнительно</span></a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text">Wi-Fi-роутер Beeline Smartbox</span>
-
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>530</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-			</table>
-
-			<!-- Таблица -->
-			<table class="table">
-				<caption>Домашнее ТВ</caption>
-				<tr>
-					<td class="cell">
-						<h3 class="cell-title"><a href="#" class="cell-title__link">Базовый 2.0</a></h3>
-					</td>
-					<td class="cell  cell--tv" data-label="Скорость">
-						<span class="cell-text  cell-text--tv">Техническая поддержка линии<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
-					</td>
-					<td class="cell" data-label="Каналы">
-						<span class="cell-text  cell-text--channels"><a href="#" class="cell-text__link"><strong>139</strong> каналов</a></span>
-					</td>
-					<td class="cell  cell--wi-fi" data-label="Wi-Fi роутер">
-						<span class="cell-text  cell-text--no-wi-fi">без Wi-Fi роутера<a class="tooltip"><span>В данный тариф не входит Wi-Fi роутер. Вы можете приобрести wi-fi роутер отдельно за 100 р./мес.</span></a></span>
-					</td>
-					<td class="cell" data-label="Цена">
-						<span class="cell-text"><strong>345</strong> ₽/месяц</span>
-					</td>
-					<td class="cell  cell--btn">
-						<button class="btn-to-connect  btn-to-connect--table">Подключить</button>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</section>
-
-	<section class="about-tariffes">
-		<div class="section-inner  section-inner--about-tariffes">
-			<span class="section-text  section-text--about-tariffes">При подключении любого тарифа мобильной связи линейки «ВСЕ в одном» Домашний интернет или Домашний интернет и Телевидение будут БЕСПЛАТНЫМИ на протяжении всего времени пользования данным тарифом.</span>
-			<span class="section-text  section-text--about-tariffes">Все условия: стоимость, скорость Домашнего интернета, количество минут,  Гбайт мобильного интернета и SMS - останутся не измененными.</span>
-		</div>
-	</section>
-
-	<section class="tariffes-all  all">
-		<div class="section-inner">
-			<h2 class="section-title">Тарифы Всё - Домашний интернет, Цифровое ТВ, Мобильная связь</h2>
-			<div class="tables tables-all">
-				<table class="table  table--labels">
-					<tr>
-						<td class="cell  cell--all">
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">Мобильная связь</span>
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">Домашний интернет</span>
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">Мобильное ТВ</span>
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">Домашнее ТВ</span>
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">Мультирум</span>
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">*Семья</span>
-						</td>
-						<td class="cell  cell--all">
-							<span class="cell-text">Стоимость</span>
-						</td>
-						<td class="cell  cell--all  cell--btn">
-						</td>
-					</tr>
-				</table>
-				<table class="table  table--all">
-					<tr>
-						<td class="cell  cell--all">
-							<h3 class="cell-title">за 550</h3>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильная связь">
-							<span class="cell-text">12 Гб</span>
-							<span class="cell-text">400 минут</span>
-							<span class="cell-text">500 sms</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашний интернет">
-							<span class="cell-text">40 Мбит/с</span>
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильное ТВ">
-							<span class="cell-text">25 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашнее ТВ">
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="Мультирум">
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="*Семья">
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="Стоимость">
-							<span class="cell-text">550 руб./мес.</span>
-						</td>
-						<td class="cell  cell--all  cell--btn">
-							<button class="btn-to-connect  btn-to-connect--table">Подключиться</button>
-						</td>
-					</tr>
-				</table>
-				<table class="table  table--all  table--hit">
-					<tr>
-						<td class="cell  cell--all">
-							<h3 class="cell-title">за 900 <span class="hit">хит</900span></h3>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильная связь">
-							<span class="cell-text">20 Гб</span>
-							<span class="cell-text">1200 минут</span>
-							<span class="cell-text">500 sms</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашний интернет">
-							<span class="cell-text">50 Мбит/с</span>
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильное ТВ">
-							<span class="cell-text">25 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашнее ТВ">
-							<span class="cell-text">139 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Мультирум">
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="*Семья">
-							<span class="cell-text">1 sim</span>
-						</td>
-						<td class="cell  cell--all" data-label="Стоимость">
-							<span class="cell-text">900 руб./мес.</span>
-						</td>
-						<td class="cell  cell--all  cell--btn">
-							<button class="btn-to-connect  btn-to-connect--table">Подключиться</button>
-						</td>
-					</tr>
-				</table>
-				<table class="table  table--all">
-					<tr>
-						<td class="cell  cell--all">
-							<h3 class="cell-title">за 1500</h3>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильная связь">
-							<span class="cell-text">30 Гб</span>
-							<span class="cell-text">2000 минут</span>
-							<span class="cell-text">500 sms</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашний интернет">
-							<span class="cell-text">100 Мбит/с</span>
-							<span class="cell-text">Wi-fi роутер</span>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильное ТВ">
-							<span class="cell-text">25 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашнее ТВ">
-							<span class="cell-text">139 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Мультирум">
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="*Семья">
-							<span class="cell-text">3 sim</span>
-						</td>
-						<td class="cell  cell--all" data-label="Стоимость">
-							<span class="cell-text">1500 руб./мес.</span>
-						</td>
-						<td class="cell  cell--all  cell--btn">
-							<button class="btn-to-connect  btn-to-connect--table">Подключиться</button>
-						</td>
-					</tr>
-				</table>
-				<table class="table  table--all">
-					<tr>
-						<td class="cell  cell--all">
-							<h3 class="cell-title">за 2500</h3>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильная связь">
-							<span class="cell-text">30 Гб</span>
-							<span class="cell-text">2000 минут</span>
-							<span class="cell-text">500 sms</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашний интернет">
-							<span class="cell-text">100 Мбит/с</span>
-							<span class="cell-text">Wi-fi роутер</span>
-						</td>
-						<td class="cell  cell--all" data-label="Мобильное ТВ">
-							<span class="cell-text">25 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Домашнее ТВ">
-							<span class="cell-text">139 каналов</span>
-						</td>
-						<td class="cell  cell--all" data-label="Мультирум">
-							<span class="cell-text  cell-text--no"></span>
-						</td>
-						<td class="cell  cell--all" data-label="*Семья">
-							<span class="cell-text">3 sim</span>
-						</td>
-						<td class="cell  cell--all" data-label="Стоимость">
-							<span class="cell-text">1500 руб./мес.</span>
-						</td>
-						<td class="cell  cell--all  cell--btn">
-							<button class="btn-to-connect  btn-to-connect--table">Подключиться</button>
-						</td>
-					</tr>
-				</table>
+			<div class="copyright">
+				<span class="copyright-text">Copyright © 2016 Pizzaro Theme. All rights reserved.</span>
 			</div>
+			<a href="#" class="btn-map">Find us on Map</a>
 		</div>
-	</section>
+	</footer>
 
-	<section class="question">
-		<div class="section-inner  section-inner--question">
-			<h2 class="section-title  section-title--question">Остались вопросы по тарифам? Мы подскажем!</h2>
-			<form class="request-form  request-form--question">
-				<div class="form-area">
-					<input name="name" type="text" class="name-input" placeholder="Ваше имя...">
-					<input name="phone" type="text" class="phone-input" placeholder="Введите номер..." required>
-					<input type="submit" class="request-form-btn" value="Жду звонка">
-				</div>
-				<div class="agreement-wrap">
-					<!-- <span class="confirm">Подтвердите соглаcие на обработку персональных данных!</span> -->
-					<div class="agree">
-						<input type="checkbox"  id="agree" checked  class="agree-checkbox">
-						<label for="agree" class="agree-label">Согласен на обработку персональных данных</label>
-					</div>
-				</div>
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Site Name">
-				<input type="hidden" name="admin_email" value="email@mail.com">
-				<input type="hidden" name="form_subject" value="вопросы по тарифам">
-				<!-- END Hidden Required Fields -->
-			</form>
-		</div> <!--  end ФОРМА ЗАЯВКИ -->
-	</section>
-
-	<section class="furniture">
-		<div class="section-inner">
-			<h2 class="seсtion-title  seсtion-title--furniture">Оборудование для интернета и Цифрового ТВ</h2>
-			<div class="images-wrap">
-				<div class="furniture-images">
-					<div class="furniture-img-area">
-						<div class="img-wrap">
-							<img src="../img/1.jpg" alt="Роутер" class="furniture-img">
-						</div>
-						<span class="furniture-disc">Роутер</span>
-					</div>
-					<div class="furniture-img-area">
-						<div class="img-wrap">
-							<img src="../img/cisco2.jpg" alt="Приставка ТВ" class="furniture-img">
-						</div>
-						<span class="furniture-disc">Приставка ТВ</span>
-					</div>
-				</div>
-				<div class="scheme">
-					<div class="img-wrap">
-						<img src="../img/scheme.jpg" alt="Приставка ТВ" class="furniture-img">
-					</div>
-					<!-- <embed width="500" height="500" allowfullscreen="true" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="../img/skhema_podkljuchenija_bilajn.swf" type="application/x-shockwave-flash"> -->
-					<span class="furniture-disc">Схема подключения</span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="article">
-		<div class="section-inner">
-			<article>
-				<p>Компания Билайн в Москве, Нижнем Новгороде, Саратове и других городах, предлагает услуги Домашнего Интернета Билайн и Цифрового Телевидения Билайн, по очень выгодным ценам.</p>
-				<p>Домашний интернет от провайдера Билайн это высокоскоростной интернет по технологии FTTB (от дома к дому по оптоволоконному кабелю) Вы получаете домашний интернет Билайн высокого качества за умеренную плату.</p>
-				<p>Подключение абсолютно бесплатное, все тарифы домашнего интернета безлимитные.</p>
-				<p>Цифровое телевидение Билайн это Телевидение высокой четкости (HDTV) и качества.</p>
-				<p>И очень много дополнительных интересных функций таких как: пауза, перемотка тв, программа на 2 недели вперед, запись одновременно 4 каналов. А так же всем известная и занимающее первое место в России (по качеству и количеству подключённых абонентов) сотовая связь Билайн.</p>
-				<p>И буквально недавно компания Билайн представила новый пакет подключения сразу ко всем услугам "все в одном" (сотовая связь Билайн для всей Вашей семьи, домашний интернет Билайн и цифровое телевидение Билайн). В данном пакете "все в одном" домашний интернет Билайн и цифровое телевидение Билайн доступно всего за 1 рубль в месяц.. и самое главное это не акция это постоянные тарифы от лидирующего провайдера компании Билайн!</p>
-				<p><strong>Важно!</strong> Подключение Домашнего Интернета и ТВ провайдера Билайн Москва бесплатное и в короткие сроки. Вы можете узнать все подробности у официального представителя Билайн в Москве у нас на сайте.</p>
-			</article>
-		</div>
-	</section>
 </body>
 </html>
