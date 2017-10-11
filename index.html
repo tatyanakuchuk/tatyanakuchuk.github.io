@@ -4,303 +4,117 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Pizzaro</title>
+	<title>Beeline</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+	<!-- 1й экран -->
+	<section class="section section--intro">
 
-	<h1 class="visually-hidden">Pizzaro</h1>
-	<!-- ПЕРВЫЙ ЭКРАН -->
-	<section class="intro">
-		<div class="section-inner  section-inner--intro">
 			<div class="intro-top">
+				<div class="intro-top-inner">
+				<!-- ЛОГОТИП -->
 				<div class="logo-wrap">
-				<img src="img/logo-pizzaro.png" alt="Pizzaro" class="logo" width="200px" height="55px">
+					<img src="img/logo.svg" alt="Билайн" class="logo" width="140px" height="40px">
 				</div>
+
+				<!-- МЕНЮ -->
 				<nav class="main-nav">
-					<div class="menu-toggle">
-						<button class="menu-toggle-btn">Menu</button>
+					<!-- Кнопка открыть меню -->
+					<div class="main-nav-toggle">
+						<span class="toggle-text">Меню</span>
 					</div>
+
 					<ul class="nav-list">
-						<li class="nav-item  nav-item--active">
-							<a href="#" class="nav-item__link">Order Online</a>
+						<li class="nav-item  nav-item--active ">
+							<a href="#" class="nav-item__link  scrollTo">Мобильное предприятие</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-item__link">About</a>
+							<a href="#" class="nav-item__link  scrollTo">Мобильная связь для бизнеса</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-item__link">News</a>
+							<a href="#" class="nav-item__link  scrollTo">Облачная АТС</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-item__link">Store locator</a>
+							<a href="#" class="nav-item__link  scrollTo">Номер 8-800</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-item__link  scrollTo">Интернет в офис</a>
 						</li>
 					</ul>
-				</nav>
-				<div class="phone-block">
-					<span class="phone-text">Call and Order in <span class="city">London</span></span>
-					<span class="phone-number">54 548 779 654</span>
-				</div>
-				<div class="intro-btn-order-wrap">
-					<button class="intro-btn-order">Order</button>
+				</nav> <!-- end МЕНЮ -->
 				</div>
 			</div>
+
 			<div class="intro-bottom">
-				<ul class="submenu-list">
-					<li class="submenu-item  submenu-item--active">
-						<a href="#" class="submenu-item-link  submenu-item-link--pizza">Pizza</a>
-					</li>
-					<li class="submenu-item">
-						<a href="#" class="submenu-item-link  submenu-item-link--burgers">Burgers</a>
-					</li>
-					<li class="submenu-item  submenu-item--salads">
-						<a href="#" class="submenu-item-link  submenu-item-link--salads">Salads</a>
-					</li>
-					<li class="submenu-item">
-						<a href="#" class="submenu-item-link  submenu-item-link--tacos">Tacos</a>
-					</li>
-					<li class="submenu-item">
-						<a href="#" class="submenu-item-link  submenu-item-link--wraps">Wraps</a>
-					</li>
-					<li class="submenu-item">
-						<a href="#" class="submenu-item-link  submenu-item-link--fries">Fries</a>
-					</li>
-					<li class="submenu-item  submenu-item--salads">
-						<a href="#" class="submenu-item-link  submenu-item-link--salads">Salads</a>
-					</li>
-					<li class="submenu-item">
-						<a href="#" class="submenu-item-link  submenu-item-link--drinks">Drinks</a>
-					</li>
-				</ul>
-
-				<div class="intro-new">
-					<img src="../img/new.png" alt="" class="intro-img">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end of ПЕРВЫЙ ЭКРАН -->
-
-	<!-- ВТОРОЙ ЭКРАН -->
-	<section class="banners">
-		<h2 class="section-title  visually-hidden"></h2>
-		<div class="section-inner  section-inner--banners">
-
-			<div class="banners-block">
-				<div class="main-banner">
-					<div class="main-banner-text">
-						<div class="main-banner-text-top">
-							<h2 class="banner-title">
-								<span class="banner-title-top">Grilled Chicken</span>
-								<span class="banner-title-bottom">Summer Pizza</span>
-							</h2>
-							<span class="banner-mark">hot & spicy</span>
+				<div class="intro-bottom-inner">
+					<h1 class="title  title--intro">Beeline для Вашего бизнеса</h1>
+					<div class="intro-bottom-content">
+					<div class="intro-bottom-content-top">
+						<span class="text  text--intro">Готовые решения, которые позволяют улучшить качество предоставляемых Вами услуг и помогают развитию Вашего бизнеса. </span>
+						<div class="phone-block">
+							<span class="phone-block-text">Вы можете позвонить нам:</span>
+							<span class="phone-number">8 800 770 00 08</span>
+							<span class="phone-number">8 800 770 00 08</span>
 						</div>
-							<span class="banner-note">*only in local</span>
+						<span class="text text-with-arrow">Или оставьте свои контактные данные и узнайте, что подходит именно Вам!</span>
 					</div>
-					<img class="main-banner-photo" src="http://via.placeholder.com/570x442" alt="Grilled Chicken" width="570px" height="442px">
-				</div>
-				<div class="small-banners">
-					<div class="small-banner">
-						<div class="small-banner-text">
-							<div class="small-banner-text-top">
-								<h2 class="small-banner-title">
-									<span class="small-banner-title-top">Free</span>
-									<span class="small-banner-title-bottom">Fries</span>
-								</h2>
-								<span class="banner-note  banner-note--fries">for online orders in <span class="banner-note-underline">wendsdays</span></span>
+
+					<div class="intro-bottom-content-bottom">
+						<div class="request-block">
+							<div class="request-block-header">
+								<span class="request-block-header-top">Оставьте заявку</span>
+								<span class="request-block-header-bottom">Наш менеджер свяжется с вами в ближайшее время.</span>
 							</div>
-						</div>
-						<img class="small-banner-photo" src="http://via.placeholder.com/270x210" alt="Free Fries" width="270px" height="210px">
-					</div>
-					<div class="small-banner">
-						<div class="small-banner-text">
-							<div class="small-banner-text-top">
-								<h2 class="small-banner-title">
-									<span class="small-banner-title-top">Iced</span>
-									<span class="small-banner-title-bottom">Coffee</span>
-								</h2>
-								<span class="small-banner-note">*only in local</span>
-							</div>
-						</div>
-						<img class="small-banner-photo" src="http://via.placeholder.com/270x210" alt="Iced Coffee" width="270px" height="210px">
-					</div>
-					<div class="small-banner-row">
-						<div class="small-banner-row-text">
-
-								<span class="small-banner-row-text-top  small-banner-text-top--">Order</span>
-								<span class="small-banner-row-text-bottom  small-banner-text-bottom--row">Online</span>
-
-						</div>
-						<img class="small-banner-row-photo" src="http://via.placeholder.com/570x210" alt="Order Online" width="570px" height="210px">
-					</div>
-				</div>
-			</div>
-
-			<div class="products-tabs">
-				<div class="products-tabs-header">
-					<div class="products-tabs-header-btn">
-						<a href="#" class="products-tabs-header-link">Wraps</a>
-					</div>
-					<div class="products-tabs-header-btn  products-tabs-header-btn--active">
-						<a href="#" class="products-tabs-header-link">Pizza Sets</a>
-					</div>
-					<div class="products-tabs-header-btn">
-						<a href="#" class="products-tabs-header-link">Burgers</a>
-					</div>
-				</div>
-				<div class="products-cards">
-
-					<div class="product-card">
-						<img src="http://via.placeholder.com/360x320" alt="Supreme Pizza"  class="product-card-photo">
-						<div class="product-card-info">
-							<h3 class="product-card-title">Supreme Pizza</h3>
-							<p class="product-card-text">Ricotta, sun dried tomatoes, garlic, mozzarella cheese, topped with lightly drizzled red sauce, pesto, and fresh basil</p>
-							<div class="pick-size">
-								<span class="pick-size-header">
-									<span class="pick-size-header-text">Pick Size</span>
-								</span>
-								<div class="product-price-picker">
-									<div class="product-card-price">
-										<button class="btn-pick-size"><strong>22</strong> cm</button>
-										<span class="product-card-price-text"><sup>$</sup>19.90</span>
-									</div>
-									<div class="product-card-price">
-										<button class="btn-pick-size"><strong>29</strong> cm</button>
-										<span class="product-card-price-text"><sup>$</sup>25.90</span>
-									</div>
+							<form class="request-form">
+								<div class="form-area">
+									<input name="phone" type="text" class="phone-input" placeholder="Телефон для связи" required>
+									<input type="email" name="email" class="email-input" placeholder="Электронная почта" required>
+									<input type="email" name="company" class="company-input" placeholder="Название компании" required>
+									<span class="agree">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+									<input type="submit" class="btn  btn-submit" value="Отправить заявку">
 								</div>
-							</div>
+
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="">
+								<input type="hidden" name="admin_email" value="email@mail.com">
+								<input type="hidden" name="form_subject" value="">
+								<!-- END Hidden Required Fields -->
+							</form>
 						</div>
-					</div>
-
-					<div class="product-card  product-card--active">
-						<img src="http://via.placeholder.com/360x320" alt="Supreme Pizza"  class="product-card-photo">
-						<div class="product-card-info">
-							<h3 class="product-card-title">Supreme Pizza</h3>
-							<p class="product-card-text">Ricotta, sun dried tomatoes, garlic, mozzarella cheese, topped with lightly drizzled red sauce, pesto, and fresh basil</p>
-							<div class="pick-size">
-								<span class="pick-size-header">
-									<span class="pick-size-header-text">Pick Size</span>
-								</span>
-								<div class="product-price-picker">
-									<div class="product-card-price">
-										<button class="btn-pick-size  btn-pick-size--active"><strong>22</strong> cm</button>
-										<span class="product-card-price-text"><sup>$</sup>19.90</span>
-									</div>
-									<div class="product-card-price">
-										<button class="btn-pick-size"><strong>29</strong> cm</button>
-										<span class="product-card-price-text"><sup>$</sup>25.90</span>
-									</div>
-								</div>
-							</div>
-							<button class="btn-add-to-cart">Add to Cart</button>
-						</div>
-
-					</div>
-
-					<div class="product-card">
-						<img src="http://via.placeholder.com/360x320" alt="Supreme Pizza"  class="product-card-photo">
-						<div class="product-card-info">
-							<h3 class="product-card-title">Supreme Pizza</h3>
-							<p class="product-card-text">Ricotta, sun dried tomatoes, garlic, mozzarella cheese, topped with lightly drizzled red sauce, pesto, and fresh basil</p>
-							<div class="pick-size">
-								<span class="pick-size-header">
-									<span class="pick-size-header-text">Pick Size</span>
-								</span>
-								<div class="product-price-picker">
-									<div class="product-card-price">
-										<button class="btn-pick-size"><strong>22</strong> cm</button>
-										<span class="product-card-price-text"><sup>$</sup>19.90</span>
-									</div>
-									<div class="product-card-price">
-										<button class="btn-pick-size"><strong>29</strong> cm</button>
-										<span class="product-card-price-text"><sup>$</sup>25.90</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end of ВТОРОЙ ЭКРАН -->
-
-	<section class="deal">
-		<h2 class="section-title  visually-hidden">Deal of the day</h2>
-		<div class="section-inner  section-inner--deal">
-			<div class="deal-content">
-				<span class="free-delivery">FREE DELIVERY WITH</span>
-				<span class="product">piZZA OF THE DAY</span>
-				<div class="price-block">
-					<div class="product-price-wrap">
-						<span class="product-price"><sup class="sup-light">$</sup>9<sup class="sup-number">99</sup></span>
-					</div>
-					<div class="products">
-						<span class="product-name">- VEGGE LOVER</span>
-						<span class="product-name">- HAWAII</span>
-						<span class="product-name">- SUPREME</span>
 					</div>
 				</div>
-
-
-				<button class="btn-order">Order Now</button>
+				</div>
 			</div>
 
-		</div>
 	</section>
 
-	<section class="features">
-		<h2 class="section-title"></h2>
-		<div class="section-inner  section-inner--features">
-
-			<ul class="features-list">
-				<li class="features-item  features-item--quality">
-					<h3 class="features-title">Best Quality</h3>
-					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
-				</li>
-				<li class="features-item  features-item--time">
-					<h3 class="features-title">On Time</h3>
-					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
-				</li>
-				<li class="features-item  features-item--master">
-					<h3 class="features-title">MasterChefs</h3>
-					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
-				</li>
-				<li class="features-item  features-item--food">
-					<h3 class="features-title">Taste Food</h3>
-					<p class="features-text">Praesent pulvinar neque pellentesque mattis pretium.</p>
-				</li>
-			</ul>
-
-		</div>
+	<!-- 2й экран -->
+	<section class="section section--intro">
+		<div class="section-inner"></div>
 	</section>
 
-	<footer class="footer-page">
-		<div class="section-inner  section-inner--footer">
-			<div class="socials">
-				<a href="#" class="social social--fb">facebook</a>
-				<a href="#" class="social social--tw">twitter</a>
-				<a href="#" class="social social--inst">instagram</a>
-				<a href="#" class="social social--ytb">youtube</a>
-				<a href="#" class="social social--email">email</a>
-			</div>
-			<div class="logo-footer">
-				<img src="img/logo-pizzaro.png" alt="Pizzaro" class="logo" width="200px" height="55px">
-			</div>
-			<div class="contacts">
-				<span class="contact">Pizzaro Restaurant</span>
-				<span class="contact">901-947 South Drive, Houston, TX 77057, USA</span>
-				<span class="contact">Telephone: +1 555 1234</span>
-				<span class="contact">Fax: +1 555 4444</span>
-			</div>
-			<div class="copyright">
-				<span class="copyright-text">Copyright © 2016 Pizzaro Theme. All rights reserved.</span>
-			</div>
-			<a href="#" class="btn-map">Find us on Map</a>
-		</div>
-	</footer>
+	<!-- 3й экран -->
+	<section class="section section--intro">
+		<div class="section-inner"></div>
+	</section>
+
+	<!-- 4й экран -->
+	<section class="section section--intro">
+		<div class="section-inner"></div>
+	</section>
+
+	<!-- 5й экран -->
+	<section class="section section--intro">
+		<div class="section-inner"></div>
+	</section>
+
+	<!-- 6й экран -->
+	<section class="section section--intro">
+		<div class="section-inner"></div>
+	</section>
 
 </body>
 </html>
