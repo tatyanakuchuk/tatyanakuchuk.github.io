@@ -11,89 +11,271 @@
 </head>
 <body>
 	<!-- 1й экран -->
-	<section class="section section--intro">
+	<section class="section  intro">
 
 			<div class="intro-top">
 				<div class="intro-top-inner">
-				<!-- ЛОГОТИП -->
-				<div class="logo-wrap">
-					<img src="img/logo.svg" alt="Билайн" class="logo" width="140px" height="40px">
-				</div>
-
-				<!-- МЕНЮ -->
-				<nav class="main-nav">
-					<!-- Кнопка открыть меню -->
-					<div class="main-nav-toggle">
-						<span class="toggle-text">Меню</span>
+					<!-- ЛОГОТИП -->
+					<div class="logo-wrap">
+						<img src="img/logo.svg" alt="Билайн" class="logo" width="140px" height="40px">
 					</div>
 
-					<ul class="nav-list">
-						<li class="nav-item  nav-item--active ">
-							<a href="#" class="nav-item__link  scrollTo">Мобильное предприятие</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link  scrollTo">Мобильная связь для бизнеса</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link  scrollTo">Облачная АТС</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link  scrollTo">Номер 8-800</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-item__link  scrollTo">Интернет в офис</a>
-						</li>
-					</ul>
-				</nav> <!-- end МЕНЮ -->
+					<!-- МЕНЮ -->
+					<nav class="main-nav">
+						<!-- Кнопка открыть меню -->
+						<div class="main-nav-toggle">
+							<button class="btn  btn-toggle">Меню</button>
+						</div>
+
+						<ul class="nav-list">
+							<li class="nav-item  nav-item--active">
+								<a href="#" class="nav-item__link  scrollTo">Мобильное предприятие</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-item__link  scrollTo">Мобильная связь для бизнеса</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-item__link  scrollTo">Облачная АТС</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-item__link  scrollTo">Номер 8-800</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-item__link  scrollTo">Интернет в офис</a>
+							</li>
+						</ul>
+					</nav> <!-- end МЕНЮ -->
 				</div>
 			</div>
 
 			<div class="intro-bottom">
 				<div class="intro-bottom-inner">
-					<h1 class="title  title--intro">Beeline для Вашего бизнеса</h1>
+
 					<div class="intro-bottom-content">
-					<div class="intro-bottom-content-top">
-						<span class="text  text--intro">Готовые решения, которые позволяют улучшить качество предоставляемых Вами услуг и помогают развитию Вашего бизнеса. </span>
-						<div class="phone-block">
-							<span class="phone-block-text">Вы можете позвонить нам:</span>
-							<span class="phone-number">8 800 770 00 08</span>
-							<span class="phone-number">8 800 770 00 08</span>
-						</div>
-						<span class="text text-with-arrow">Или оставьте свои контактные данные и узнайте, что подходит именно Вам!</span>
-					</div>
 
-					<div class="intro-bottom-content-bottom">
-						<div class="request-block">
-							<div class="request-block-header">
-								<span class="request-block-header-top">Оставьте заявку</span>
-								<span class="request-block-header-bottom">Наш менеджер свяжется с вами в ближайшее время.</span>
+						<div class="intro-bottom-content-top">
+							<h1 class="title  title--intro">Beeline для Вашего бизнеса</h1>
+							<span class="text  text--intro">Готовые решения, которые позволяют улучшить качество предоставляемых Вами услуг и помогают развитию Вашего бизнеса. </span>
+							<div class="phone-block">
+								<span class="phone-block-text">Вы можете позвонить нам:</span>
+								<span class="phone-number">8 800 770 00 08</span>
+								<span class="phone-number">8 800 770 00 08</span>
 							</div>
-							<form class="request-form">
-								<div class="form-area">
-									<input name="phone" type="text" class="phone-input" placeholder="Телефон для связи" required>
-									<input type="email" name="email" class="email-input" placeholder="Электронная почта" required>
-									<input type="email" name="company" class="company-input" placeholder="Название компании" required>
-									<span class="agree">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
-									<input type="submit" class="btn  btn-submit" value="Отправить заявку">
-								</div>
-
-								<!-- Hidden Required Fields -->
-								<input type="hidden" name="project_name" value="">
-								<input type="hidden" name="admin_email" value="email@mail.com">
-								<input type="hidden" name="form_subject" value="">
-								<!-- END Hidden Required Fields -->
-							</form>
+							<span class="text text-with-arrow">Или оставьте свои контактные данные и узнайте, что подходит именно Вам!</span>
 						</div>
+
+						<div class="intro-bottom-content-bottom">
+							<div class="request-block">
+								<div class="request-block-header">
+									<span class="request-block-header-top">Оставьте заявку</span>
+									<span class="request-block-header-bottom">Наш менеджер свяжется с вами в ближайшее время.</span>
+								</div>
+								<form class="request-form">
+									<div class="form-area">
+										<input name="phone" type="text" class="phone-input" placeholder="Телефон для связи" required>
+										<input type="email" name="email" class="email-input" placeholder="Электронная почта" required>
+										<input type="email" name="company" class="company-input" placeholder="Название компании" required>
+										<input type="name" name="name" class="name-input" placeholder="Как к Вам обращаться" required>
+										<input type="name" name="name" class="name-input" placeholder="Как к Вам обращаться" required>
+										<span class="agree">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+										<input type="submit" class="btn  btn-submit" value="Отправить заявку">
+									</div>
+
+									<!-- Hidden Required Fields -->
+									<input type="hidden" name="project_name" value="">
+									<input type="hidden" name="admin_email" value="email@mail.com">
+									<input type="hidden" name="form_subject" value="">
+									<!-- END Hidden Required Fields -->
+								</form>
+							</div>
+						</div>
+
 					</div>
-				</div>
+
 				</div>
 			</div>
-
 	</section>
 
 	<!-- 2й экран -->
-	<section class="section section--intro">
-		<div class="section-inner"></div>
+	<section class="section  mob-company">
+
+		<div class="mob-company-top">
+			<div class="mob-company-top-inner">
+				<div class="mob-company-top-content">
+					<h2 class="section-title section-title--mob-company">Услуга "Мобильное предприятие"</h2>
+					<p class="mob-company-top-text">Готовое решение для малого бизнеса, которое раньше могли себе позволить только большие компании</p>
+					<input type="submit" class="btn  btn-request  btn--mob-company" value="Заказать">
+				</div>
+			</div>
+		</div>
+
+		<div class="mob-company-middle">
+			<div class="mob-company-middle-inner">
+				<span class="mob-company-middle-head">При подключении «Мобильного предприятия» клиент получает пакет из 10 полезных услуг:</span>
+
+				<div class="mob-company-services">
+
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/crm.png" alt="Система управления продажами CRM" class="service-img" width="106px" height="81px">
+							<span class="service-header">Система управления продажами CRM</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/cloud.png" alt="Облачная АТС" class="service-img" width="106px" height="81px">
+							<span class="service-header">Облачная АТС</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/graph.png" alt="Анализ звонков и рекламы" class="service-img" width="106px" height="81px">
+							<span class="service-header">Анализ звонков и рекламы</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/mobile.png" alt="Мобильная связь" class="service-img" width="106px" height="81px">
+							<span class="service-header">Мобильная связь</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/message.png" alt="Мессенджер" class="service-img" width="106px" height="81px">
+							<span class="service-header">Мессенджер</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/phone.png" alt="Виджеты звонков" class="service-img" width="106px" height="81px">
+							<span class="service-header">Виджеты звонков</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/head.png" alt="Многоканальные номера" class="service-img" width="106px" height="81px">
+							<span class="service-header">Многоканальные номера</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/tasks.png" alt="Таскменеджер" class="service-img" width="106px" height="81px">
+							<span class="service-header">Таскменеджер</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/storage.png" alt="Облачное хранилище" class="service-img" width="106px" height="81px">
+							<span class="service-header">Облачное хранилище</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+					<div class="mob-company-service">
+						<div class="mob-company-service-content">
+							<img src="img/globe.png" alt="Мобильный интеренет" class="service-img" width="106px" height="81px">
+							<span class="service-header">Мобильный интеренет</span>
+							<span class="service-text">Управляйте сделками с помощью платформы по управлению клиентской базой. Добавляйте клиентов в группы и ведите историю сотрудничества.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="section  mob-connection">
+
+		<div class="mob-connection-top">
+			<div class="mob-connection-top-inner">
+				<div class="mob-connection-top-content">
+					<h2 class="section-title section-title--mob-connection">Корпоративная мобильная связь</h2>
+					<p class="mob-connection-top-text">Мобильная связь для неограниченного количества сотрудников.</p>
+					<input type="submit" class="btn  btn-request  btn--mob-connection" value="Заказать">
+				</div>
+			</div>
+		</div>
+
+		<div class="mob-connection-bottom">
+			<div class="mob-connection-bottom-inner">
+				<span class="mob-connection-bottom-head">Корпоративная мобильная связь - тарифы</span>
+				<div class="mob-connection-tariff-cards">
+
+					<div class="mob-connection-tariff-card">
+						<h3 class="mob-connection-tariff-title">Для бизнеса за 400</h3>
+						<div class="mob-connection-tariff-text-block">
+							<span class="mob-connection-tariff-text">5 Гбайт в месяц</span>
+							<span class="mob-connection-tariff-text">100 минут в месяц</span>
+							<span class="mob-connection-tariff-text">100 сообщений в месяц</span>
+						</div>
+						<span class="mob-connection-tariff-price"><strong>400 ₽</strong> в месяц</span>
+						<input type="submit" class="btn  btn-request  btn--mob-connection" value="Заказать">
+					</div>
+
+					<div class="mob-connection-tariff-card">
+						<h3 class="mob-connection-tariff-title">Для бизнеса за 700</h3>
+						<div class="mob-connection-tariff-text-block">
+							<span class="mob-connection-tariff-text">15 Гбайт в месяц</span>
+							<span class="mob-connection-tariff-text">600 минут в месяц</span>
+							<span class="mob-connection-tariff-text">600 сообщений в месяц</span>
+						</div>
+						<span class="mob-connection-tariff-price"><strong>700 ₽</strong> в месяц</span>
+						<input type="submit" class="btn  btn-request  btn--mob-connection" value="Заказать">
+					</div>
+
+					<div class="mob-connection-tariff-card">
+						<h3 class="mob-connection-tariff-title">Для бизнеса за 1100</h3>
+						<div class="mob-connection-tariff-text-block">
+							<span class="mob-connection-tariff-text">20 Гбайт в месяц</span>
+							<span class="mob-connection-tariff-text">1500 минут в месяц</span>
+							<span class="mob-connection-tariff-text">1500 сообщений в месяц</span>
+						</div>
+						<span class="mob-connection-tariff-price"><strong>1100 ₽</strong> в месяц</span>
+						<input type="submit" class="btn  btn-request  btn--mob-connection" value="Заказать">
+					</div>
+
+					<div class="mob-connection-tariff-card">
+						<h3 class="mob-connection-tariff-title">Для бизнеса за 1600</h3>
+						<div class="mob-connection-tariff-text-block">
+							<span class="mob-connection-tariff-text">25 Гбайт в месяц</span>
+							<span class="mob-connection-tariff-text">3000 минут в месяц</span>
+							<span class="mob-connection-tariff-text">3000 сообщений в месяц</span>
+						</div>
+						<span class="mob-connection-tariff-price"><strong>1600 ₽</strong> в месяц</span>
+						<input type="submit" class="btn  btn-request  btn--mob-connection" value="Заказать">
+					</div>
+
+					<div class="mob-connection-tariff-card">
+						<h3 class="mob-connection-tariff-title">Для бизнеса за 3000</h3>
+						<div class="mob-connection-tariff-text-block">
+							<span class="mob-connection-tariff-text">30 Гбайт в месяц</span>
+							<span class="mob-connection-tariff-text">6000 минут в месяц</span>
+							<span class="mob-connection-tariff-text">6000 сообщений в месяц</span>
+						</div>
+						<span class="mob-connection-tariff-price"><strong>3000 ₽</strong> в месяц</span>
+						<input type="submit" class="btn  btn-request  btn--mob-connection" value="Заказать">
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+
 	</section>
 
 	<!-- 3й экран -->
@@ -115,6 +297,11 @@
 	<section class="section section--intro">
 		<div class="section-inner"></div>
 	</section>
+
+	<!--  СКРИПТЫ  -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 
 </body>
 </html>
