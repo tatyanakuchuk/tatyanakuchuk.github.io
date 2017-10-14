@@ -249,19 +249,15 @@ img {
 .section-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box; }
   @media (min-width: 768px) {
     .section-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .section-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .section-title {
   font-size: 28px;
@@ -309,8 +305,8 @@ img {
 .intro-top-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -320,14 +316,10 @@ img {
       flex-direction: row; }
   @media (min-width: 768px) {
     .intro-top-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .intro-top-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .logo-wrap {
   margin-right: 15px; }
@@ -357,8 +349,8 @@ img {
 .intro-bottom-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
   min-height: 600px;
   position: relative;
@@ -366,14 +358,10 @@ img {
   padding-bottom: 45px; }
   @media (min-width: 768px) {
     .intro-bottom-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .intro-bottom-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .intro-bottom-content {
   display: -ms-flexbox;
@@ -574,7 +562,8 @@ img {
 .phone-input,
 .email-input,
 .company-input,
-.name-input {
+.name-input,
+.address-input {
   font-size: 17px;
   padding: 10px 15px;
   margin-bottom: 15px;
@@ -585,8 +574,16 @@ img {
   .phone-input:hover,
   .email-input:hover,
   .company-input:hover,
-  .name-input:hover {
+  .name-input:hover,
+  .address-input:hover {
     border-color: #FFBA00; }
+
+.address-label {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 15px; }
 
 ::-webkit-input-placeholder {
   color: #fff;
@@ -616,8 +613,8 @@ img {
 .mob-company-top-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
   padding-top: 35px;
   padding-bottom: 45px;
@@ -628,14 +625,10 @@ img {
   border-bottom: 1px solid rgba(40, 40, 40, 0.2); }
   @media (min-width: 768px) {
     .mob-company-top-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .mob-company-top-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .mob-company-top-content {
   width: 40%;
@@ -647,26 +640,22 @@ img {
   font-weight: 500; }
 
 .mob-company-middle {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .mob-company-middle-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
   padding-top: 35px;
   padding-bottom: 50px; }
   @media (min-width: 768px) {
     .mob-company-middle-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .mob-company-middle-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .mob-company-middle-head {
   display: block;
@@ -707,11 +696,15 @@ img {
   font-size: 16px;
   color: rgba(40, 40, 40, 0.8); }
 
+.mob-connection {
+  border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.2); }
+
 .mob-connection-top-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
   padding-top: 45px;
   padding-bottom: 45px;
@@ -722,14 +715,10 @@ img {
   border-bottom: 1px solid rgba(40, 40, 40, 0.2); }
   @media (min-width: 768px) {
     .mob-connection-top-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .mob-connection-top-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .mob-connection-top-content {
   width: 40%;
@@ -745,20 +734,17 @@ img {
 .mob-connection-bottom-inner {
   min-width: 290px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
-  padding-top: 35px; }
+  padding-top: 35px;
+  padding-bottom: 35px; }
   @media (min-width: 768px) {
     .mob-connection-bottom-inner {
-      min-width: 660px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      min-width: 660px; } }
   @media (min-width: 1200px) {
     .mob-connection-bottom-inner {
-      max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      max-width: 1200px; } }
 
 .mob-connection-bottom-head {
   display: block;
@@ -788,7 +774,7 @@ img {
   margin-bottom: 10px;
   cursor: pointer; }
   .mob-connection-tariff-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .mob-connection-tariff-title {
   font-size: 19px;
@@ -826,6 +812,235 @@ img {
 .mob-connection-tariff-price {
   display: block;
   margin-bottom: 35px; }
+
+.mob-cloud-top {
+  background-image: url(../img/bg-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .mob-cloud-top::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(76, 171, 239, 0.85), rgba(76, 171, 239, 0.2)); }
+
+.mob-cloud-top-inner {
+  min-width: 290px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 400px auto;
+  min-height: 540px; }
+  @media (min-width: 768px) {
+    .mob-cloud-top-inner {
+      min-width: 660px; } }
+  @media (min-width: 1200px) {
+    .mob-cloud-top-inner {
+      max-width: 1200px; } }
+
+.mob-cloud-top-content {
+  width: 40%;
+  padding-top: 50px; }
+
+.mob-cloud-top-text {
+  min-height: 175px;
+  font-size: 18px;
+  font-weight: 500; }
+
+.mob-cloud-advantage-inner {
+  min-width: 290px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  @media (min-width: 768px) {
+    .mob-cloud-advantage-inner {
+      min-width: 660px; } }
+  @media (min-width: 1200px) {
+    .mob-cloud-advantage-inner {
+      max-width: 1200px; } }
+
+.mob-cloud-advantage-head {
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 35px;
+  font-family: 'Roboto', 'Arial', sans-serif; }
+  .mob-cloud-advantage-head-top {
+    display: block;
+    margin-bottom: 10px; }
+  .mob-cloud-advantage-head-bottom {
+    display: block;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    width: 60%;
+    margin: 0 auto; }
+
+.advantage-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px; }
+
+.mob-cloud-advantages {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.mob-cloud-advantage-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 220px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+.service-img {
+  width: 106px;
+  height: 81px;
+  margin-bottom: 15px; }
+
+.service-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  min-height: 42px; }
+
+.service-text {
+  font-size: 16px;
+  color: rgba(40, 40, 40, 0.8); }
+
+.mob-cloud-tariff {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.mob-cloud-tariff-inner {
+  min-width: 290px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  @media (min-width: 768px) {
+    .mob-cloud-tariff-inner {
+      min-width: 660px; } }
+  @media (min-width: 1200px) {
+    .mob-cloud-tariff-inner {
+      max-width: 1200px; } }
+
+.mob-cloud-tariff-head {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 35px;
+  font-family: 'Roboto', 'Arial', sans-serif; }
+
+.mob-cloud-tariff-card {
+  width: 285px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(171, 190, 233, 0.2);
+  margin-right: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .mob-cloud-tariff-card:last-child {
+    margin-right: 0; }
+
+.mob-cloud-tariff-card-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+
+.mob-cloud-tariff-card-head,
+.mob-cloud-tariff-card-block,
+.mob-cloud-tariff-card-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.mob-cloud-tariff-card-block {
+  padding-bottom: 15px; }
+
+.mob-cloud-tariff-card-footer {
+  text-align: center;
+  border-bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.mob-cloud-tariff-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: 'Roboto', 'Arial', sans-serif; }
+
+.mob-cloud-tariff-price {
+  margin-bottom: 15px; }
+
+.btn--mob-cloud {
+  margin: 0 auto; }
+
+.mob-cloud-tariff-cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.mob-cloud-tariff-card-block-name {
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  font-size: 16px; }
+
+.mob-cloud-tariff-card-text-block {
+  margin-bottom: 17px; }
+  .mob-cloud-tariff-card-text-block--number {
+    text-align: center; }
+    .mob-cloud-tariff-card-text-block--number .mob-cloud-tariff-text {
+      font-size: 95px;
+      line-height: 1; }
+      .mob-cloud-tariff-card-text-block--number .mob-cloud-tariff-text:last-child {
+        font-size: 18px; }
+
+.mob-cloud-tariff-text {
+  display: block;
+  font-size: 16px; }
+  .mob-cloud-tariff-text:last-child {
+    font-size: 18px;
+    font-weight: 600; }
+
+.mob-cloud-tariff-price {
+  display: block; }
 
 /* Slider */
 .slick-slider {
@@ -1061,7 +1276,21 @@ img {
   .mob-connection-tariff-card {
     margin-bottom: 20px;
     margin-left: 15px;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+  .mob-cloud-tariff-cards {
+    margin: 0 auto;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .mob-cloud-tariff-card {
+    width: 45%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px; }
+    .mob-cloud-tariff-card:last-child {
+      margin-right: 5px; } }
 
 @media (max-width: 992px) {
   .intro-bottom-inner {
@@ -1095,7 +1324,12 @@ img {
   .mob-connection-bottom-head {
     width: 100%; }
   .mob-connection-top-inner {
-    background-image: url(../img/mob-connect2.png); } }
+    background-image: url(../img/mob-connect2.png); }
+  .mob-cloud-tariff-card {
+    min-width: 280px;
+    margin-bottom: 20px; }
+  .mob-cloud-advantage-head-bottom {
+    width: 100%; } }
 
 @media (max-width: 768px) {
   .mob-company-top-inner {
@@ -1138,7 +1372,21 @@ img {
     margin-left: 5px;
     margin-right: 5px; }
   .mob-connection-top-text {
-    min-height: 100px; } }
+    min-height: 100px; }
+  .mob-cloud-tariff-inner {
+    padding-top: 25px; }
+  .mob-cloud-tariff-head {
+    width: 100%;
+    margin-bottom: 15px; }
+  .mob-cloud-tariff-card {
+    min-width: 280px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px; }
+    .mob-cloud-tariff-card:nth-child(2n) {
+      margin-right: 2px; }
+  .mob-cloud-tariff-title {
+    font-size: 20px; } }
 
 @media (max-width: 620px) {
   .mob-company-service-content {
@@ -1168,7 +1416,25 @@ img {
     width: 100%;
     text-align: center; }
   .mob-connection-top-text {
-    min-height: 55px; } }
+    min-height: 55px; }
+  .mob-cloud-advantage-content {
+    text-align: center; }
+  .advantage-img {
+    margin: 0 auto; }
+  .mob-cloud-tariff-inner {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .mob-cloud-top-inner {
+    min-height: 300px;
+    padding-top: 25px; }
+  .mob-cloud-top-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px; }
+  .mob-cloud-top-text {
+    min-height: 55px; }
+  .mob-cloud-tariff-card {
+    width: 280px; } }
 
 @media (max-width: 480px) {
   .mob-company-middle-head {
@@ -1181,7 +1447,11 @@ img {
     background-image: url(../img/mob-connect2.png);
     background-size: 350px auto;
     padding-bottom: 300px;
-    background-position: center bottom; } }
+    background-position: center bottom; }
+  .mob-cloud-top-inner {
+    padding-top: 45px; }
+  .mob-cloud-top-content {
+    padding-top: 0; } }
 
 @media (max-width: 320px) {
   .title--intro {
@@ -1213,4 +1483,6 @@ img {
   .mob-connection-top-inner {
     background-image: url(../img/mob-2-320.png);
     background-size: 320px auto;
-    padding-bottom: 250px; } }
+    padding-bottom: 250px; }
+  .mob-cloud-top-inner {
+    padding-top: 25px; } }
