@@ -67,6 +67,43 @@ $(document).ready(function() {
 		}]
 	});
 
+	$('.number8800-advantages').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 570,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}]
+	});
+
 
 	// СТРОКА ПОИСКА ГОРОДА
 // 	$('#search-city-input').hideseek({
@@ -225,37 +262,33 @@ $(document).ready(function() {
 
 
 	// СКРОЛЛ
-	// $("a.scrollTo").click(function(e) {
-	// 	e.preventDefault();
-	//
-	// 	window.location.href = this.href;
-	//
-	//
-	// 	if ($(window).width() < '1200') {
-	// 		$('.nav-list').slideUp();
-	// 	}
-	// 	else
-	// 			if ($(window).width() >= '1200') {
-	// 				$('.nav-list').show();
-	// 			}
-	//
-	// 	var elementClick = $(this).attr("href");
-	// 	var destination = $(elementClick).offset().top - 50;
-	//
-	// 	jQuery("html:not(:animated),body:not(:animated)").animate({
-	// 		scrollTop: destination
-	// 	}, 1000);
-	// 	return false;
-	//
-	// });
-	//
-	// $(window).resize(function() {
-	// 	if ($(window).width() >= '1200') {
-	// 		$('.nav-list').show();
-	// 	}
-	// 	else if ($(window).width() < '1200') {
-	// 		$('.nav-list').hide();
-	// 	}
-	// });
+	$("a.scrollTo").click(function(e) {
+		e.preventDefault();
+
+		if ($(window).width() < '1200') {
+			$('.nav-list').slideUp();
+		}
+		else if ($(window).width() >= '1200') {
+			$('.nav-list').show();
+		}
+
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top - 100;
+
+		jQuery("html:not(:animated),body:not(:animated)").animate({
+			scrollTop: destination
+		}, 1000);
+		return false;
+
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() >= '1200') {
+			$('.nav-list').show();
+		}
+		else if ($(window).width() < '1200') {
+			$('.nav-list').hide();
+		}
+	});
 
 });
