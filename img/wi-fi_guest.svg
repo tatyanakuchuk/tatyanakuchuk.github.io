@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 137.571 134.832" enable-background="new 0 0 137.571 134.832" xml:space="preserve">
+<g>
+	
+		<radialGradient id="XMLID_2_" cx="91.9269" cy="68.0554" r="68.4531" gradientTransform="matrix(0.9496 0 0 0.9496 -18.5323 3.3777)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.3817" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#E9E8E8"/>
+	</radialGradient>
+	<circle id="XMLID_2999_" fill="url(#XMLID_2_)" cx="68.757" cy="68" r="65"/>
+	<g id="XMLID_2994_">
+		<linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="35.0957" y1="25.0006" x2="94.7172" y2="79.5758">
+			<stop  offset="0" style="stop-color:#5F5F5F"/>
+			<stop  offset="1" style="stop-color:#121212"/>
+		</linearGradient>
+		<path id="XMLID_2998_" fill="url(#XMLID_3_)" d="M94.081,87.119H49.434c-3.672,0-6.676-3.004-6.676-6.676V36.676
+			c0-3.672,3.004-6.676,6.676-6.676h44.647c3.672,0,6.676,3.004,6.676,6.676v43.766C100.757,84.114,97.753,87.119,94.081,87.119z"/>
+		<linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="82.7598" y1="63.0119" x2="52.1883" y2="44.1548">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.4"/>
+			<stop  offset="0.9946" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+		<path id="XMLID_2997_" fill="url(#XMLID_4_)" d="M43.757,78.472V37.79c0-3.751,3.12-6.82,6.933-6.82h42.207
+			c1.944,0,3.707,0.798,4.969,2.076L43.757,78.472z"/>
+		<path id="XMLID_2996_" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M80.757,45.654
+			c-2.574-2.534-6.103-4.101-10-4.101c-3.897,0-7.426,1.567-10,4.101"/>
+		<path id="XMLID_2995_" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M76.462,49.23
+			c-1.544-1.52-3.662-2.461-6-2.461c-2.338,0-4.456,0.94-6,2.461"/>
+	</g>
+	<g id="XMLID_2976_">
+		
+			<linearGradient id="XMLID_5_" gradientUnits="userSpaceOnUse" x1="-97.6677" y1="-18.3122" x2="-112.7708" y2="-56.1794" gradientTransform="matrix(0.9157 0.3272 -0.2989 0.9253 130.8688 132.785)">
+			<stop  offset="0" style="stop-color:#504D4D"/>
+			<stop  offset="1" style="stop-color:#9E9B9C"/>
+		</linearGradient>
+		<path id="XMLID_2993_" fill="url(#XMLID_5_)" d="M60.452,74.601c-0.52-1.055-13.211-26.83-13.211-26.83
+			c-0.005-0.01-0.012-0.018-0.017-0.028c-0.007-0.015-0.012-0.031-0.019-0.046c-2.039-4.142-7.732-5.51-12.716-3.056
+			s-7.37,7.8-5.331,11.942c0.007,0.015,0.017,0.028,0.025,0.043c0.005,0.01,0.007,0.021,0.012,0.031c0,0,12.691,25.775,13.211,26.83
+			c4.562,9.265,12.3,14.787,17.284,12.333C64.672,93.366,65.014,83.866,60.452,74.601z"/>
+		
+			<linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="136.9848" y1="211.2808" x2="136.9848" y2="228.4382" gradientTransform="matrix(0.8743 -0.4305 0.4417 0.8971 -178.1259 -84.8253)">
+			<stop  offset="0" style="stop-color:#3E3B3B"/>
+			<stop  offset="1" style="stop-color:#151515"/>
+		</linearGradient>
+		<path id="XMLID_2992_" fill="url(#XMLID_6_)" d="M59.181,75.785c-0.506-1.027-12.857-26.112-12.857-26.112
+			c-0.005-0.01-0.012-0.018-0.016-0.028c-0.007-0.015-0.012-0.03-0.019-0.045c-1.985-4.031-6.989-5.627-11.178-3.564
+			c-4.189,2.062-5.976,7.002-3.991,11.033c0.007,0.015,0.016,0.028,0.024,0.042c0.005,0.01,0.007,0.02,0.012,0.03
+			c0,0,12.351,25.085,12.857,26.112c4.44,9.017,11.435,14.655,15.623,12.592C63.824,93.783,63.62,84.802,59.181,75.785z"/>
+		
+			<ellipse id="XMLID_2991_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -21.4432 20.4425)" fill="#B4B4B4" cx="36.257" cy="59.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2990_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -20.2507 21.9236)" fill="#B4B4B4" cx="40.257" cy="57.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2989_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -19.0582 23.4047)" fill="#B4B4B4" cx="44.257" cy="55.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2988_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -22.834 22.0505)" fill="#B4B4B4" cx="39.257" cy="63.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2987_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -21.6414 23.5316)" fill="#B4B4B4" cx="43.257" cy="61.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2986_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -20.4489 25.0127)" fill="#B4B4B4" cx="47.257" cy="59.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2985_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -24.3151 23.2431)" fill="#B4B4B4" cx="41.257" cy="67.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2984_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -23.1225 24.7242)" fill="#B4B4B4" cx="45.257" cy="65.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2983_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -21.93 26.2053)" fill="#B4B4B4" cx="49.257" cy="63.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2982_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -25.7962 24.4356)" fill="#B4B4B4" cx="43.257" cy="71.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2981_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -24.6036 25.9167)" fill="#B4B4B4" cx="47.257" cy="69.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2980_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -23.4111 27.3978)" fill="#B4B4B4" cx="51.257" cy="67.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2979_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -19.9621 19.25)" fill="#54AF32" cx="34.257" cy="55.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2978_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -18.7696 20.7311)" fill="#B4B4B4" cx="38.257" cy="53.5" rx="1.5" ry="1.5"/>
+		
+			<ellipse id="XMLID_2977_" transform="matrix(0.9096 -0.4155 0.4155 0.9096 -17.5771 22.2122)" fill="#EB5D5E" cx="42.257" cy="51.5" rx="1.5" ry="1.5"/>
+	</g>
+	<linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="34.3174" y1="90.5155" x2="68.3978" y2="83.2278">
+		<stop  offset="0" style="stop-color:#B9995A"/>
+		<stop  offset="0.8234" style="stop-color:#E6C37B"/>
+		<stop  offset="0.9944" style="stop-color:#F1CE83"/>
+	</linearGradient>
+	<path id="XMLID_2975_" fill="url(#XMLID_7_)" d="M68.757,106H34.965c-1.219,0-2.208-1.112-2.208-2.483V68h36V106z"/>
+	<polygon id="XMLID_2974_" opacity="0.3" fill="#4A3A23" points="66.757,68 32.757,76 32.757,86 49.995,86 	"/>
+	<polygon id="XMLID_2973_" fill="#FFEDA2" points="67.757,67.731 122.757,55 122.757,54 81.757,54 	"/>
+	<linearGradient id="XMLID_8_" gradientUnits="userSpaceOnUse" x1="94.5069" y1="54.0936" x2="97.1846" y2="69.9538">
+		<stop  offset="0" style="stop-color:#7D633C"/>
+		<stop  offset="0.2348" style="stop-color:#85683C"/>
+		<stop  offset="0.6239" style="stop-color:#9D753B"/>
+		<stop  offset="0.9944" style="stop-color:#B98637"/>
+	</linearGradient>
+	<polygon id="XMLID_2972_" fill="url(#XMLID_8_)" points="68.757,68 106.757,68 122.757,55 81.757,55 	"/>
+	<linearGradient id="XMLID_9_" gradientUnits="userSpaceOnUse" x1="71.4839" y1="80.174" x2="104.7066" y2="94.1095">
+		<stop  offset="0" style="stop-color:#9B7E53"/>
+		<stop  offset="0.3314" style="stop-color:#A48754"/>
+		<stop  offset="0.8807" style="stop-color:#BDA257"/>
+		<stop  offset="0.9944" style="stop-color:#C4A958"/>
+	</linearGradient>
+	<path id="XMLID_2971_" fill="url(#XMLID_9_)" d="M104.47,106H68.757V68h38v35.458C106.757,104.862,105.733,106,104.47,106z"/>
+	<circle id="XMLID_2970_" fill="#FFFFFF" cx="70.757" cy="54" r="2"/>
+	<rect id="XMLID_2969_" x="66.757" y="68" fill="#F5D292" width="2" height="38"/>
+	<rect id="XMLID_2968_" x="34.757" y="104" opacity="0.2" fill="#754917" width="70" height="2"/>
+	<polygon id="XMLID_2967_" fill="#936B22" points="68.757,68 34.757,68 16.757,77 16.757,78 50.757,78 	"/>
+	<linearGradient id="XMLID_10_" gradientUnits="userSpaceOnUse" x1="27.5881" y1="66.2489" x2="52.3323" y2="77.1654">
+		<stop  offset="0" style="stop-color:#C2A46B"/>
+		<stop  offset="0.8746" style="stop-color:#EED297"/>
+		<stop  offset="0.9944" style="stop-color:#F4D99E"/>
+	</linearGradient>
+	<polygon id="XMLID_2966_" fill="url(#XMLID_10_)" points="66.757,68 32.757,68 16.757,77 49.757,77 	"/>
+</g>
+</svg>
