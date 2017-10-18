@@ -27,23 +27,24 @@
 							<button class="btn  btn-toggle">Меню</button>
 						</div>
 
-						<ul class="nav-list">
-							<li class="nav-item">
-								<a href="#office" class="nav-item__link  scrollTo">Интернет в офис</a>
-							</li>
-							<li class="nav-item">
-								<a href="#mob-company" class="nav-item__link  scrollTo">Мобильное предприятие</a>
-							</li>
-							<li class="nav-item">
-								<a href="#mob-connection" class="nav-item__link  scrollTo">Мобильная связь для бизнеса</a>
-							</li>
-							<li class="nav-item">
-								<a href="#mob-cloud" class="nav-item__link  scrollTo">Облачная АТС</a>
-							</li>
-							<li class="nav-item">
-								<a href="#number-8-800" class="nav-item__link  scrollTo">Номер 8-800</a>
-							</li>
-						</ul>
+							<ul class="nav-list">
+								<li class="nav-item">
+									<a href="#office" class="nav-item__link  scrollTo">Интернет в офис</a>
+								</li>
+								<li class="nav-item">
+									<a href="#mob-company" class="nav-item__link  scrollTo">Мобильное предприятие</a>
+								</li>
+								<li class="nav-item">
+									<a href="#mob-connection" class="nav-item__link  scrollTo">Мобильная связь для бизнеса</a>
+								</li>
+								<li class="nav-item">
+									<a href="#mob-cloud" class="nav-item__link  scrollTo">Облачная АТС</a>
+								</li>
+								<li class="nav-item">
+									<a href="#number-8-800" class="nav-item__link  scrollTo">Номер 8-800</a>
+								</li>
+							</ul>
+
 					</nav> <!-- end МЕНЮ -->
 				</div>
 			</div>
@@ -1188,6 +1189,40 @@
 	<section class="section section--intro">
 		<div class="section-inner"></div>
 	</section>
+
+	<!-- ПОПАП -->
+	<div class="popup-active-wrap">
+		<div class="popup  popup--active">
+
+			<div class="request-block">
+				<div class="request-block-header">
+					<button class="close-popup"></button>
+					<span class="request-block-header-top">Оставьте заявку</span>
+					<span class="request-block-header-bottom">Наш менеджер свяжется с вами в ближайшее время.</span>
+				</div>
+				<form class="request-form">
+					<div class="form-area">
+						<input name="phone" type="text" class="phone-input" placeholder="Телефон для связи" required>
+						<input type="text" name="name" class="name-input" placeholder="Как к Вам обращаться" required>
+						<input type="text" name="company" class="company-input" placeholder="Название компании" required>
+						<label for="address" class="address-label">Укажите Ваш адрес для услуги "Интернет в офис":</label>
+						<input type="text" name="address" class="address-input" placeholder="Местоположение">
+						<span class="agree">Отправляя форму, вы соглашаетесь на обработку персональных данных</span>
+						<input type="submit" class="btn  btn-submit" value="Отправить заявку">
+					</div>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="">
+					<input type="hidden" name="admin_email" value="email@mail.com">
+					<input type="hidden" name="form_subject" value="">
+					<!-- END Hidden Required Fields -->
+				</form>
+			</div>
+	</div>
+	<div class="popup-sucess-wrap">
+		<div class="popup  popup--sucess">
+			<span class="popup-text">Наш сотрудник свяжется с Вами в течение дня!</br>Спасибо!</span>
+		</div>
+	</div>
 
 	<!--  СКРИПТЫ  -->
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
