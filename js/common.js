@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('.mob-company-services').slick({
+	$('.partners-list').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		dots: true,
@@ -104,91 +104,8 @@ $(document).ready(function() {
 		}]
 	});
 
-
-	// СТРОКА ПОИСКА ГОРОДА
-// 	$('#search-city-input').hideseek({
-// 		nodata: 'По вашему запросу ничего не найдено',
-// 		highlight: true
-// 	});
-//
-// 	$('#search-city-input').on("keyup input", function() {
-//
-// 		var city = $('.city-item');
-// 		var input = $('#search-city-input').val();
-//
-// 		if($(window).width() <= '1200') {
-// 			$('.region').hide();
-// 		}
-// });
-
-	// $('.search-city__link').click(function(e) {
-	// 	e.preventDefault();
-	// 		$('.regions').slideDown(500);
-	// });
-	//
-	// $('.close-regions').click(function() {
-	// 		$('.regions').hide();
-	// });
-
-	//
-	// $('.message-form-header').click(function() {
-	//
-	// 	if($('.message-form').is(':visible')) {
-	// 		$('.message-form').slideUp(500);
-	// 	}
-	// 	else {
-	// 		$('.message-form').slideDown(500);
-	// 	}
-	//
-	// });
-
 // ПОЧТА
 	$(".request-form").submit(function() {
-		var popup = $('.popup-active-wrap');
-		var success = $(".popup-sucess-wrap");
-		var th = $(this);
-
-			$.ajax({
-				type: "POST",
-				url: "mail.php",
-				data: th.serialize()
-			}).done(function() {
-				// Сообщение об отправке формы
-				popup.removeClass("active").fadeOut(100);
-				success.addClass("active").css('display', 'flex').hide().fadeIn();
-				setTimeout(function() {
-					success.removeClass("active").css('display', 'flex').fadeOut();
-					// Done Functions
-					th.trigger("reset");
-				}, 2000);
-			});
-				return false;
-	});
-
-
-	$(".request-form").submit(function() {
-		var popup = $('.popup-active-wrap');
-		var success = $(".popup-sucess-wrap");
-		var th = $(this);
-
-			$.ajax({
-				type: "POST",
-				url: "mail.php",
-				data: th.serialize()
-			}).done(function() {
-				// Сообщение об отправке формы
-				popup.removeClass("active").fadeOut(100);
-				success.addClass("active").css('display', 'flex').hide().fadeIn();
-				setTimeout(function() {
-					success.removeClass("active").css('display', 'flex').fadeOut();
-					// Done Functions
-					th.trigger("reset");
-				}, 2000);
-			});
-				return false;
-	});
-
-	$(".message-form").submit(function() {
 		var popup = $('.popup-active-wrap');
 		var success = $(".popup-sucess-wrap");
 		var th = $(this);
@@ -221,16 +138,31 @@ $(document).ready(function() {
 		});
 	});
 
-	// $('.nav-item--to-connect').click(function() {
-	//
-	// 	var popup = $('.popup-active-wrap');
-	// 	var closePopup = $('.close-popup');
-	// 	popup.addClass("active").css('display', 'flex').hide().fadeIn();
-	// 	closePopup.click(function() {
-	// 		$(popup).removeClass("active").fadeOut();
-	// 	});
-	//
-	// });
+	$('.btn--office').click(function() {
+		var popup = $('.popup-active-wrap');
+		popup.find('input[name="form_subject"]').val('Интернет в офис');
+	});
+
+	$('.btn--mob-company').click(function() {
+		var popup = $('.popup-active-wrap');
+		popup.find('input[name="form_subject"]').val('Услуга "Мобильное предприятие"');
+	});
+
+	$('.btn--mob-connection').click(function() {
+		var popup = $('.popup-active-wrap');
+		popup.find('input[name="form_subject"]').val('Корпоративная мобильная связь');
+	});
+
+	$('.btn--mob-cloud').click(function() {
+		var popup = $('.popup-active-wrap');
+		popup.find('input[name="form_subject"]').val('Услуга "Облачная АТС" для бизнеса');
+	});
+
+	$('.btn--number8800').click(function() {
+		var popup = $('.popup-active-wrap');
+		popup.find('input[name="form_subject"]').val('Номер 8-800');
+	});
+
 
 // МЕНЮ
 	$('.main-nav-toggle').click(function() {
@@ -277,5 +209,29 @@ $(document).ready(function() {
 			$('.nav-list').css('display', 'flex')
 		}
 	});
+
+	// СТРОКА ПОИСКА ГОРОДА
+	$('#search-city-input').hideseek({
+		nodata: 'По вашему запросу ничего не найдено',
+		highlight: true
+	});
+
+	$('#search-city-input').on("keyup input", function() {
+
+		var city = $('.city-item');
+		var input = $('#search-city-input').val();
+
+		if($(window).width() <= '1200') {
+			$('.region').hide();
+		}
+});
+$('.search-city__link').click(function(e) {
+	e.preventDefault();
+		$('.regions').slideDown(500);
+});
+
+$('.close-regions').click(function() {
+		$('.regions').hide();
+});
 
 });
