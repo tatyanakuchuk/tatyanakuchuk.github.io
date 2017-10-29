@@ -30,79 +30,24 @@ $(document).ready(function() {
 		}]
 	});
 
-	$('.mob-cloud-advantages').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		dots: true,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
-				}
-			},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 570,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}]
-	});
+	// АККОРДЕОН
+	$('.about-bottom>p').not(':first-of-type').hide();
 
-	$('.number8800-advantages').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		dots: true,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1
-				}
-			},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 570,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}]
-	});
+
+	  $('.about-bottom>h3').click(function() {
+
+	    var findArticle = $(this).next();
+	    var findWrapper = $(this).closest('.about-bottom');
+
+	    if (findArticle.is(':visible')) {
+	      findArticle.slideUp('fast');
+	    }
+	    else {
+	      findWrapper.find('>p').slideUp('fast');
+	      findArticle.slideDown('fast');
+	    }
+	  });
+
 
 // ПОЧТА
 	$(".request-form").submit(function() {
@@ -210,28 +155,5 @@ $(document).ready(function() {
 		}
 	});
 
-	// СТРОКА ПОИСКА ГОРОДА
-	$('#search-city-input').hideseek({
-		nodata: 'По вашему запросу ничего не найдено',
-		highlight: true
-	});
-
-	$('#search-city-input').on("keyup input", function() {
-
-		var city = $('.city-item');
-		var input = $('#search-city-input').val();
-
-		if($(window).width() <= '1200') {
-			$('.region').hide();
-		}
-});
-$('.search-city__link').click(function(e) {
-	e.preventDefault();
-		$('.regions').slideDown(500);
-});
-
-$('.close-regions').click(function() {
-		$('.regions').hide();
-});
 
 });
